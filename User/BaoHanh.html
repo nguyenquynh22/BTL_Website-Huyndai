@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="main.js">  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+            <img src="logo.png" alt="Hyundai Logo" />
+            <h2 style="color: rgb(12, 69, 126);">HYUNDAI</h2>
+        </div>
+        <div class="brand-name">
+            <h2>TC MOTOR</h2>
+        </div>
+    </div>
+    <nav>
+        <button class="menu-btn">MENU</button>
+        <ul class="navigation-bar">
+            <li><a href="TrangChu.html">Trang Chủ</a></li>
+            <li><a href="GioiThieu.html">Giới Thiệu</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropbtn">Mua xe <i class="fa fa-chevron-down"></i>
+                </a>
+                <div class="dropdown-content">
+                    <a href="TraGop.html">Trả góp</a>
+                    <a href="DuToanChiPhi.html">Dự toán chi phí</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a href="DichVu.html" class="dropbtn" style="background-color:rgb(232,78,4);">Dịch Vụ <i class="fa fa-chevron-down"></i>
+                </a>
+                <div class="dropdown-content">
+                    <a href="BaoHanh.html">Bảo Hành</a>
+                    <a href="PhuTung&PhuKien.html">Phụ Tùng Và Phụ Kiện</a>
+                </div>
+            </li>
+            <li><a href="DangKyLaiThu.html">Đăng ký lái thử</a></li>
+            <li><a href="KhuyenMai.html">Khuyến mãi</a></li>
+            <li><a href="TinTuc.html">Tin Tức</a></li>
+            <li><a href="LienHe.html">Liên Hệ</a></li>
+            <li class="tim-kiem">
+                <a href="#" class="search-icon"><i class="fa fa-search"></i></a>
+                <div class="search">
+                    <div class="form-search">
+                        <div class="form-search_exit">
+                            <button class="close-search">X</button>
+                        </div>
+                        <div class="form-search_item">
+                            <input type="text" placeholder="Type then hit enter to search...">
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <div class="overlay"></div>
+        </ul>
+    </nav>
+
+    <div class="warranty-title"></div>
+    <div class="warranty-container"></div>
+
+    <div class="service-title-button">
+        <h3>Bảo Hành</h3>
+        <div><i class="fa-solid fa-house"></i> > <button class="dvBtn">Dịch Vụ</button> > <button>Bảo Hành</button></div>
+    </div>
+    <div class="service-select-button">
+        <button class="dvBtn">Chương trình dịch vụ</button>
+        <button>Bảo hành</button>
+        <button class="ptpkBtn">Phụ tùng và phụ kiện</button>
+    </div>
+    <div class="service-container">
+        <div class="service-wrapper">
+            <div class="service-select">
+                <button class="service-title active" data-content="content1">Phạm vi, điều kiện và các trường hợp bảo hành</button>
+                <button class="service-title" data-content="content2">Các trường hợp không được áp dụng bảo hành</button>
+                <button class="service-title" data-content="content3">Chi phí liên quan</button>
+            </div>
+            <div class="service-content">
+                <div id="content1" class="content active">
+                    <p style="color:red; font-size: 25px;">Phạm vi, điều kiện và các trường hợp được bảo hành</p>
+                    <p>Khách hàng có quyền bảo hành ở bất cứ Đại lý nào của Hyundai trên toàn lãnh thổ ViệtNam và được hưởng chế độ bảo hành theo chính sách theo qui định.</p>
+                    <p>Bao gồm:</p>
+                    <ol>
+                        <li>Các điều khoản bảo hành này được áp dụng cho xe ô tô Hyundai Thành Công Việt Nam phân phối thông qua các Đại lý ủy nhiệm và chỉ có giá trị trong phạm vi nước Cộng hòa xã hội chủ nghĩa Việt Nam.</li>
+                        <li>Công ty Cổ phần Ô tô Hyundai Thành Công Việt Nam chịu trách nhiệm bảo hành cho mỗi chiếc xe mới được phân phối qua các Đại lý ủy nhiệm về các khiếm khuyết do vật liệu hay sản xuất trong điều kiện sử dụng và bảo dưỡng bình thường trong 2 năm hoặc 50.000 km, tùy điều kiện nào đến trước.</li>
+                        <li>Các Đại lý ủy nhiệm sẽ tiến hành sửa chữa hay thay thế miễn phí các phụ tùng được kết luận là có sai hỏng trong giới hạn bảo hành (miễn phí cả về nhân công và phụ tùng thay thế). Tất cả các phụ tùng sai hỏng được thay thế bằng phụ tùng mới theo điều kiện bảo hành sẽ trở thành tài sản của Công ty Cổ phần Ô tô Hyundai Thành Công Việt Nam.</li>
+                        <li>Ắc quy: Thời hạn bảo hành bình ắc quy là 12 tháng hoặc 20.000 km tùy theo điều kiện nào đến trước.</li>
+                        <li>Tất cả các phụ kiện lắp đặt tại các Đại lý như: đài, ổ CD, ổ DVD, ….bảo hành dựa theo điều kiện bảo hành của nhà cung cấp phụ kiện.</li>
+                    </ol>
+                </div>
+                <div id="content2" class="content">
+                    <p style="color:red; font-size: 25px;">Các trường hợp không được áp dụng bảo hành</p>
+                    <p>Điều kiện bảo hành sẽ không được áp dụng cho:</p>
+                    <ol>
+                        <li>Bất cứ một hư hỏng nào xảy ra do việc không tiến hành bảo dưỡng định kỳ, bảo quản xe hay vận chuyển xe không đúng quy cách.</li>
+                        <li>Bất cứ một hư hỏng nào xảy ra do việc sửa chữa hay bảo dưỡng không tuân theo các phương pháp như chỉ dẫn của Công ty Cổ phần Ô tô Hyundai Thành Công Việt Nam và bất cứ hư hỏng nào là nguyên nhân của việc sửa chữa, điều chỉnh không phải do Đại lý ủy nhiệm tiến hành.</li>
+                        <li>Bất cứ một hư hỏng nào xảy ra do xe làm việc quá tải, lái xe trên địa hình không phù hợp hay vận hành xe không theo các phương pháp được chỉ ra trong sách hướng dẫn sử dụng hay vượt quá giới hạn quy định (tải trọng tối đa, số lượng hành khách, tốc độ động cơ và các đặc điểm khác).</li>
+                        <li>Bất cứ một hư hỏng nào xảy ra do việc sử dụng các phụ tùng, các loại dầu và hóa chất hay các phụ kiện không chính hiệu. Việc sử dụng các phụ tùng, các loại dầu và hóa chất hay các phụ kiện không chính hiệu có thể làm giảm khả năng hoạt động và độ tin cậy của xe. Công ty Cổ phần Ô tô Hyundai Thành Công Việt Nam sẽ không chịu trách nhiệm về các chi phí liên quan đến các phụ tùng bị hư hỏng do việc sử dụng các nhiên liệu, các chất bôi trơn hay các hóa chất (dầu, dầu phanh, nước làm mát và các loại khác) không chính hiệu.</li>
+                        <li>Bất cứ một hư hỏng nào xảy ra do những sửa đổi mà không được Công ty Cổ phần Ô tô Hyundai Thành Công Việt Nam phê duyệt.</li>
+                        <li>Các hiện tượng như tiếng ồn, độ rung, thấm dầu, ăn mòn hay giảm giá trị tự nhiên mà không ảnh hưởng tới chất lượng sản phẩm, chức năng và hiệu suất làm việc của xe.</li>
+                        <li>Các phụ tùng hao mòn do sử dụng như bu-gi, các bộ lọc nhiên liệu, các bộ lọc dầu, các bộ lọc gió, má phanh, đĩa ly hợp, đèn, cầu chì, chổi than, cần gạt nước, dây đai, lốp xe và các bộ phận bằng cao su, kính và các danh mục phụ tùng khác do Công ty Cổ phần Ô tô Hyundai Thành Công Việt Nam quy định.</li>
+                        <li>Các dung dịch như dầu, mỡ, dung dịch điện phân cho ắc quy, nước làm mát, bộ tản nhiệt và các danh mục khác do Công ty Cổ phần Ô tô Hyundai Thành Công Việt Nam quy định.</li>
+                        <li>Làm sạch, kiểm tra, điều chỉnh và các hạng mục bảo dưỡng định kỳ khác. Các chi phí phát sinh cho việc kiểm tra định kỳ xe ô tô do Đại lý thực hiện sẽ không nằm trong trách nhiệm bảo hành của Công ty Cổ phần Ô tô Hyundai Thành Công Việt Nam.</li>
+                        <li>Bất cứ một khoản chi phí nào để khắc phục hậu quả của việc sửa chữa bảo dưỡng không đúng đã được thực hiện trước đó. Chi phí sữa chữa này sẽ do Đại lý ủy nhiệm – nơi tiến hành công việc sửa chữa sai đó – chi trả, kể cả khi thời gian bảo hành đã ký hết. Khách hàng sẽ không phải trả tiền cho những công việc này.</li>
+                        <li>Bất cứ hư hỏng nào gây ra bởi các yếu tố ngoài tầm kiểm soát của nhà sản xuất như thảm họa tự nhiên, cháy nổ, va chạm, đá văng, trộm cắp và các hư hỏng xảy ra sau đó do hậu quả của các sự kiện này, hư hỏng nào gây ra bởi khói, các chất hóa học, phân chim, nước biển, gió biển, mưa axít hay các hiện tượng tương tự khác.</li>
+                    </ol>
+                </div>
+                <div id="content3" class="content">
+                    <p style="color:red; font-size: 25px;">Phụ phí liên quan đến bảo hành mà khách hàng phải trả:</p>
+                    <ul>
+                        <li>
+                            &#43; Phụ phí cho việc liên lạc, ở trọ, ăn uống và các mục khác do xe hỏng tại một địa điểm cách xa Đại lý.
+                        </li>
+                        <li>
+                            &#43; Bất cứ chi phí nào liên quan đến thương tích của người và thiệt hại về tài sản (trừ xe). Những đền bù về thời gian, thiệt hại trong việc kinh doanh hay chi phí thuê xe để sử dụng trong suốt thời gian sửa chữa.
+                        </li>
+                    </ul>
+                    <div class="content3-img">
+                        <img src="DICHVU/khach-hang-bao-duong-xe-tai-dai-ly-hyundai.jpg" alt="">
+                        <img src="DICHVU/kiem-tra-dinh-ky-hyundai-binh-duong.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-menu" style="background-color: #22292F;">
+            <div class="footer-menu-inforcompany">
+                <h2>Thông tin showroom tại Hưng Yên</h2>
+                <p>Địa chỉ: Số 317 Nguyễn Văn Linh, Phường An Tảo, Hưng Yên</p>
+            </div>
+            <div class="footer-menu-hotline">
+                <h2>Thông tin liên hệ</h2>
+                <div class="contact-info">
+                    <div>Hotline: 1900561212</div>
+                    <div>Email: minhnlq.hyundai.@gmail.com</div>
+                </div>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/profile.php?id=100072681441547" target="_blank">
+                        
+                        <i class="fa-brands fa-facebook"></i>
+                        
+                    </a>
+                    <a href="https://www.youtube.com/your_youtube_channel" target="_blank">
+                        
+                        <i class="fa-brands fa-youtube"></i>
+                        
+                    </a>
+                </div>
+            </div>
+            <div class="footer-menu-signupemail">
+                <h2>Bạn muốn nhận khuyến mãi?</h2>
+                <p>Điền email của bạn vào đâu nếu không muốn</p>
+                <p>bỏ lỡ khuyến mãi nào nhé!</p>
+                <input>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const serviceTitles = document.querySelectorAll('.service-title');
+        const contents = document.querySelectorAll('.content');
+
+        serviceTitles.forEach(title => {
+            title.addEventListener('click', () => {
+                // Loại bỏ class active khỏi tất cả các title và content
+                serviceTitles.forEach(t => t.classList.remove('active'));
+                contents.forEach(c => c.classList.remove('active'));
+
+                // Thêm class active cho title và content tương ứng
+                title.classList.add('active');
+                const contentId = title.getAttribute('data-content');
+                document.getElementById(contentId).classList.add('active');
+            });
+        });
+    </script>
+
+    <div class="position-fixed">
+        <a href="http://zalo.me/0343330924 "></a>
+        <h3>0912345678</h3>
+        <img src="iconzalo.jpg" alt="">
+    </div>
+    <script src="main.js"></script>
+    <script>
+        document.querySelector('.ptpkBtn').addEventListener('click', function(){
+            window.location.href = 'PhuTung&PhuKien.html'
+        })
+        document.querySelector('.dvBtn').addEventListener('click', function(){
+            window.location.href = 'DichVu.html'
+        })
+    </script>
+</body>
+</html>

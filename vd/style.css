@@ -1,0 +1,162 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+header {
+    background-color: #fff;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+}
+
+.logo img {
+    height: 30px;
+    margin-right: 10px;
+}
+
+.logo span {
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.search-bar {
+    display: flex;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    flex-grow: 1; /* Cho phép thanh tìm kiếm mở rộng */
+    max-width: 400px; /* Giới hạn độ rộng */
+}
+
+.search-bar input {
+    border: none;
+    padding: 8px 10px;
+    outline: none;
+    flex-grow: 1;
+}
+
+.search-bar button {
+    background-color: #f0f0f0;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    margin-left: auto; /* Đẩy sang phải */
+}
+
+.user-info .flag {
+    height: 20px;
+    margin-right: 15px;
+}
+
+.user-info .fas {
+    font-size: 1.2em;
+    color: #555;
+    margin-right: 15px;
+}
+
+.user-info .avatar {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+
+.main-container {
+    display: flex;
+    flex: 1;
+    overflow: hidden; /* Quan trọng để scroll nội dung chính */
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #333;
+    color: #fff;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Đẩy logout xuống dưới */
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 5px;
+}
+
+.sidebar ul li a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    transition: background-color 0.3s;
+}
+
+.sidebar ul li a:hover {
+    background-color: #555;
+}
+
+.sidebar ul li a i {
+    margin-right: 10px;
+}
+
+.sidebar .logout {
+    padding: 20px;
+    border-top: 1px solid #555;
+}
+
+.sidebar .logout a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 0;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+.sidebar .logout a:hover {
+    background-color: #555;
+}
+
+.content {
+    flex: 1;
+    background-color: #fff; /* Màu nền cho phần nội dung chính */
+    padding: 20px;
+    overflow-y: auto; /* Cho phép cuộn nếu nội dung dài */
+    box-sizing: border-box;
+}
+
+.content iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}

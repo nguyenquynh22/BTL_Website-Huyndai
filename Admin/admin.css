@@ -1,0 +1,730 @@
+/*--------------------------------TRANG HOME------------------------------------*/
+body{
+    background-color: white;
+    width: 100%;
+    margin: 0;
+}
+.header {
+    display: flex;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    background: rgba(128, 128, 128, 0.145);
+    padding-left: 20px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 30px;
+    margin-right: 15px;
+}
+
+.logo h2 {
+    color:rgb(12, 69, 126);
+    margin: 0;
+    font-size: 24px;
+    color: #333;
+    border-right:3px solid rgb(12, 69, 126);
+    padding-right: 20px;
+}
+.brand-name{
+    margin-right: 20px;
+}
+.brand-name h2 {
+    margin: 0;
+    font-size: 24px;
+    color: #ED1C24;
+    margin-left: 20px;
+}
+.employee-management_topin-main {
+    display: grid;
+    grid-template-columns: 15% 85%; /* Tạo 2 cột với tỷ lệ 20% và 80% */
+    gap: 5px; 
+    width: 100%; 
+    font-size: 20px;
+}
+.employee-management_topin-main_right{
+    background-color: rgba(128, 128, 128, 0.145);
+    height: calc(650px - 5px);
+}
+.admin-main_left{
+    background-color: rgb(34,41,47);
+    color: white;
+    height: 635px;
+    padding-left: 15px;
+    padding-top: 15px;
+    align-items: center;
+}
+.admin-main_left div{
+    cursor: pointer;
+}
+.admin-main_left.left-home a{
+    text-decoration: none;
+}
+.left-home{
+    margin: 10px 0;
+}
+.left-home a{
+    color: white;
+    text-decoration: none;
+}
+/* .left-home a:focus, .left-home a:active {
+    color: rgb(236, 86, 78);
+} */
+.admin-top{
+    background-color: rgba(128 , 128, 128, 0.145);
+    width: 100%;
+    box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.3);
+}
+.search-bar {
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  
+.search-bar input {
+    width: 250px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    margin-right: 5px;
+    margin-left: 10px;
+}
+  
+.search-bar button {
+    background-color: white ;
+    border: none;
+    padding: 8px 12px;
+    height: 30px ;
+    cursor: pointer;
+    position: absolute;
+    right: 15px;
+    border-radius: 20px;
+}
+  
+.right-icons {
+    display: flex;
+    align-items: center;
+    margin-left: auto; 
+  }
+  
+  .right-icons img,
+  .right-icons ion-icon,
+  .right-icons i {
+    margin-left: 15px;
+    height: 25px;
+  }
+  
+  .flag-icon {
+    height: 20px;
+  }
+  
+.avatar-icon {
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+}
+.left-dropdown ul{
+    display: none;
+}
+.dropdown-list{
+    list-style-type: none;
+}
+.left-dropdown ul li {
+    border-left: 1px solid white; 
+    margin-bottom: 10px; 
+    padding-left: 10px;
+}
+.left-dropdown ul li:last-child {
+    border-right: none;
+}
+.dropdown-toggle{
+    cursor: pointer;
+}
+.top-intro-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.top-intro {
+    display: flex;
+    justify-content:space-evenly;
+}
+
+.intro_1 {
+    width: 200px;
+    height: 150px;
+    border-radius: 5px;
+    margin: 10px;
+    margin-right: 30px;
+    box-shadow: 10px 10px 20px lightgray;
+}
+
+.intro_1 p {
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.intro_1 i {
+    padding-top: 15px;
+}
+.admin-main_right{
+    position: relative;
+}
+.admin-main_right_top {
+    text-align: center;
+}
+
+.admin-main_right_top > p {
+    padding-top: 20px;
+}
+
+.admin-main_right_bottom, .admin-main_right_top{
+    background-color: white;
+    margin: 10px;
+}
+.admin-main_right_top{
+    margin-top: -10px;
+}
+.admin-main_right_bottom{
+    width:auto ;
+    height: 60%;
+    display: flex;
+}
+canvas {
+    width: 800px !important;
+    height: 380px !important;
+}
+
+.chart-container {
+    flex: 2; /* Biểu đồ chiếm 2 phần */
+    margin-right: 20px; 
+}
+
+.statistics {
+    flex: 1; /* Thống kê chiếm 1 phần */
+    padding: 13px;
+    height: 200px;
+
+}
+
+.statistics>h3 {
+    margin-top: 0;
+    text-align: center;
+}
+.statistics ul li{
+    text-align: center;
+}
+.statistics ul {
+    list-style-type: none;
+    padding: 0;
+}
+.turnover{
+    line-height: 20px;
+    color: white;
+    border-radius:3px;
+    margin: 2px 0;
+    position: relative;
+}
+.turnover i{
+    position: absolute;
+    top: 3px;
+    left:80px;  
+}
+.turnover h3, .turnover p{
+    margin-left:5px;
+}
+
+#lineChart {
+    width: 100%;  
+    height: 400px; 
+    margin: 0px auto;
+  }
+  .chart-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+.nav-text {
+    display: inline-block; 
+    margin-left: 5px; 
+}
+.nav-text :hover{
+    color: orange;
+}
+table{
+    overflow-y: scroll;
+}
+/* Ẩn chữ khi màn hình nhỏ hơn 768px (ví dụ) */
+@media screen and (max-width: 768px) {
+    .nav-text {
+        display: none; 
+    }
+    .admin-main_left{
+        width: 50px;
+    }
+    .icon{
+        font-size: 30px;
+    }
+    .brand-name, #hide {
+        display: none;
+    }
+    .logo h2{
+        border-right:none;
+    }
+    .header {
+        justify-content: space-between;
+    }
+    .admin-main_right{
+        margin-left:-45px ;
+    }
+    .chart-container{
+        width: 100px;
+    }
+    
+}
+@media screen and (max-width: 428px){
+    .employee-management_search input,
+    .employee-management_search p, table,
+    .employee-management_top,
+    .employee-management_list p{
+        margin-left: 35px;
+    }
+}
+/*--------------------------------TRANG QUẢN LÝ NHÂN VIÊN------------------------------------*/
+.employee-management_top{
+    display: flex;
+}
+.employee-management_top p{
+    cursor: pointer;
+}
+.employee-management_top button{
+    margin-right: 10px;
+    background-color: aquamarine;
+}
+
+/*--------------------------------TRANG QUẢN LÝ NHÀ CUNG CẤP------------------------------------*/
+.employee-management_top {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+}
+
+.employee-management_top p {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.employee-management_top button {
+    position: absolute;
+    right: 0;
+    border: none;
+    padding: 8px 10px;
+    cursor: pointer;
+}
+
+.employee-management_search {
+    padding-left: 10px;
+    margin-top: -10px;
+    border-top: 1px solid black;
+}
+.employee-management_search input{
+    max-width: 1000px;
+}
+.employee-management_search > div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.employee-management_search p {
+    font-weight: bold;
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: row ;
+    margin-right: 10px;
+}
+
+.input-container input {
+    padding: 8px;
+    margin-right: 5px; 
+    width: 300px;
+}
+
+.input-container input:last-child {
+    margin-bottom: 0; 
+}
+
+.employee-management_search button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+.employee-management_list {
+    padding: 10px;
+}
+
+.employee-management_list p {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.employee-management_list table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.employee-management_list th, .employee-management_list td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.employee-management_list th {
+    background-color: #f2f2f2;
+}
+
+.employee-management_list i {
+    background-color: white;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+}
+.content-item.active {
+    display: block;
+}
+
+
+
+
+
+.table-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.table-actions {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 10px;
+}
+
+.table-actions button {
+    padding: 10px;
+    margin-right: 10px;
+}
+
+.employee-management_list table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.employee-management_list th, .employee-management_list td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.employee-management_list th {
+    background-color: #f2f2f2;
+}
+
+#car-image {
+    max-width: 100%;
+}
+
+.total-container {
+    display: flex;
+    justify-content: flex-end; /* Căn chỉnh sang phải */
+    margin-top: 10px; /* Thêm khoảng cách với bảng */
+}
+
+.total-label {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+
+/*-----------------------------OVERLAY FORM THÊM THÔNG TIN-----------------------------*/
+.overlay{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(15, 7, 7, 0.5);
+    text-align: center;
+    display: none; /* Ẩn overlay mặc định */
+    opacity: 0; /* Đảm bảo trong suốt khi ẩn */
+    transition: opacity 0.3s ease;
+    overflow: hidden;
+}
+.overlay.active {
+    display: block; 
+    opacity: 1;
+    overflow: hidden;
+}
+.form{
+    position: absolute; 
+    top: 50%;
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    padding: 10px 20px;
+    text-align: center;
+    border-radius: 10px;
+    background: white;
+    width: 500px;
+    opacity: 0; 
+    animation: dropdown 0.5s ease-out forwards;
+}
+@keyframes dropdown {
+    0% {
+        opacity: 0;
+        transform: translate(-50%, -150%); 
+    }
+    60% {
+        opacity: 1;
+        transform: translate(-50%, -30%); 
+    }
+    100% {
+        opacity: 1;
+        transform: translate(-50%, -50%); 
+    }
+}
+.form-group{
+    margin: 10px 0;
+}
+.form-group input{
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    background: rgba(211, 211, 211, 0.457);
+}
+.form-group label{
+    font-size: 18px;
+    margin-right: 10px
+}
+.save-button{
+    font-size: 15px;
+    border: none;
+    padding: 5px 35px;
+    background: lightslategray;
+    color: white;
+    transition:0.3s ease ;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.save-button:hover{
+    background: rgb(33, 53, 74);
+}
+.exit-button{
+    position: absolute;
+    top: 0;
+    right :0;
+    border: none;
+    background: red;
+    color: white;
+    cursor: pointer;
+    transition: 0.2 ease;
+}
+.exit-button:hover{
+    background: rgb(138, 7, 7);
+}
+.car{
+    margin: 10px 0;
+}
+.car input{
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    background: rgba(211, 211, 211, 0.457);
+}
+.car label{
+    font-size: 18px;
+    margin-right: 10px
+}
+
+/******************************login *******************/
+
+.login{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+.login img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: absolute; 
+    top: 0;
+    left: 0;
+    z-index: -1; 
+    opacity: 0.6;
+}
+.information{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    z-index: 10;
+    flex-direction: row;
+}
+.form-left{
+    width: 500px; 
+    height: 60%;
+    height: auto; 
+}
+.form-left img{
+    width: 70%;
+    height: 400px;
+    object-fit: cover;
+    display: block;
+    opacity: 1.5; 
+}
+.form-right{
+    background: white;
+    height: 400px;
+    width: 300px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 15px;
+}
+.form-right h2{
+    margin-bottom: 60px;
+}
+.form-right button{
+    margin-top: 15px;
+    border: none;
+    background: rgb(102, 102, 214);
+    color:white;
+    padding: 8px 20px;
+    border-radius: 5px;
+    font-size: 15px;
+    cursor: pointer;
+}
+.form-right button:hover{
+    box-shadow:0 0 15px rgb(102, 102, 214);
+}
+/* .form-right input{
+    border-radius: 5px;
+    margin: 10px;
+    padding: 7px 10px;
+} */
+#register{
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+}
+#registerBtn:hover{
+    cursor: pointer;
+    color: rgb(84, 84, 235);
+    box-shadow: 0px 1px rgb(84, 84, 235);
+}
+/* Add this to your admin.css */
+
+/* Add this to your admin.css */
+
+/* General styling for inputs for better appearance */
+.form-right input {
+    border: 1px solid #ccc; /* Initial subtle border */
+    border-radius: 5px;
+    margin: 10px;
+    padding: 7px 10px;
+    width: 80%;
+    outline: none; /* Remove default browser outline */
+    transition: box-shadow 0.4s ease-in-out, border-color 0.4s ease-in-out; /* Smooth transition for the shadow and border color */
+    position: relative;
+}
+
+/* Effect when input is focused */
+.form-right input:focus {
+    border-color: transparent; /* Make the actual border transparent as we're using shadow initially */
+    animation: border-focus-clockwise 0.8s forwards; /* Apply the new clockwise animation */
+}
+
+/* Keyframes for the clockwise border animation */
+@keyframes border-focus-clockwise {
+    0% {
+        /* Start with the shadow only on the top-left corner */
+        box-shadow:
+            inset 1px 1px 0 0 rgb(48, 145, 231), /* Top-left corner */
+            inset -1px -1px 0 0 transparent, /* Bottom-right */
+            inset 1px -1px 0 0 transparent, /* Bottom-left */
+            inset -1px 1px 0 0 transparent; /* Top-right */
+        border-color: transparent;
+    }
+    25% {
+        /* Top border appears (from left to right) */
+        box-shadow:
+            inset 0 1px 0 0 rgb(48, 145, 231), /* Top border */
+            inset 0 0 0 0 transparent,
+            inset 0 0 0 0 transparent,
+            inset 0 0 0 0 transparent;
+        border-color: transparent;
+    }
+    50% {
+        /* Top and right borders appear */
+        box-shadow:
+            inset 0 1px 0 0 rgb(48, 145, 231), /* Top border */
+            inset -1px 0 0 0 rgb(48, 145, 231), /* Right border */
+            inset 0 0 0 0 transparent,
+            inset 0 0 0 0 transparent;
+        border-color: transparent;
+    }
+    75% {
+        /* Top, right, and bottom borders appear */
+        box-shadow:
+            inset 0 1px 0 0 rgb(48, 145, 231), /* Top border */
+            inset -1px 0 0 0 rgb(48, 145, 231), /* Right border */
+            inset 0 -1px 0 rgb(48, 145, 231), /* Bottom border */
+            inset 0 0 0 0 transparent;
+        border-color: transparent;
+    }
+    100% {
+        /* All four borders appear, completing the clockwise path */
+        box-shadow:
+            inset 0 1px 0 0 rgb(48, 145, 231), /* Top border */
+            inset -1px 0 0 0 rgb(48, 145, 231), /* Right border */
+            inset 0 -1px 0 0rgb(48, 145, 231), /* Bottom border */
+            inset 1px 0 0 0 rgb(48, 145, 231); /* Left border */
+        border: 1px solid rgb(48, 145, 231); /* Final solid red border */
+    }
+}
+.log-out{
+    position: absolute;
+    bottom: 10px;
+    left:0;
+    transform: translateX(70%);
+    text-align: center;
+    padding: 5px 15px;
+}
+.log-out:hover{
+    background: #4CAF50;
+}
+@media screen and (max-width: 768px){
+    .log-out{
+        transform: unset;
+        padding:unset;
+    }
+}

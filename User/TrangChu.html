@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hyundai</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="main.js" defer></script>  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+            <img src="logo.png" alt="Hyundai Logo" />
+            <h2 style="color: rgb(12, 69, 126);">HYUNDAI</h2>
+        </div>
+        <div class="brand-name">
+            <h2>TC MOTOR</h2>
+        </div>
+    </div>
+    <nav>
+        <button class="menu-btn">MENU</button>
+        <ul class="navigation-bar">
+            <li style="background-color:rgb(232,78,4);"><a href="TrangChu.html">Trang Chủ</a></li>
+            <li><a href="GioiThieu.html">Giới Thiệu</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropbtn">Mua xe <i class="fa fa-chevron-down"></i>
+                </a>
+                <div class="dropdown-content">
+                    <a href="TraGop.html">Trả góp</a>
+                    <a href="DuToanChiPhi.html">Dự toán chi phí</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a href="DichVu.html" class="dropbtn">Dịch Vụ <i class="fa fa-chevron-down"></i>
+                </a>
+                <div class="dropdown-content">
+                    <a href="BaoHanh.html">Bảo Hành</a>
+                    <a href="PhuTung&PhuKien.html">Phụ Tùng Và Phụ Kiện</a>
+                </div>
+            </li>
+            <li><a href="DangKyLaiThu.html">Đăng ký lái thử</a></li>
+            <li><a href="KhuyenMai.html">Khuyến mãi</a></li>
+            <li><a href="TinTuc.html">Tin Tức</a></li>
+            <li><a href="LienHe.html">Liên Hệ</a></li>
+            <li class="tim-kiem">
+                <a href="#" class="search-icon"><i class="fa fa-search"></i></a>
+                <div class="search">
+                    <div class="form-search">
+                        <div class="form-search_exit">
+                            <button class="close-search">X</button>
+                        </div>
+                        <div class="form-search_item">
+                            <input type="text" placeholder="Type then hit enter to search...">
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <div class="overlay"></div>
+        </ul>
+    </nav>
+
+    <div class ="hero-img">
+        <img src ="Nen/ionq5.jpg" alt="Đây là xe ionq5">
+        <img src ="Nen/accent.jpg" alt = "Đây là xe accent">
+        <img src="Nen/santafe.jpg" alt="Đây là xe santa fe">
+        <button class="prev">&lt;</button>
+        <button class="next">&gt;</button>
+    </div>
+
+    <div class="Intro">
+        <h1>KHÁM PHÁ CÁC DÒNG XE HYUNDAI</h1>
+        <hr>
+    </div>
+    
+    <div class="discovery-vehicles-box">
+        <div class="discovery-vehicles-box-tab">
+            <ul class="discovery-vehicles-tab">
+                <li class="discovery-vehicles-tab-item active" data-category="sedan">
+                    <h2 class="car-model">Sedan</h2>
+                </li>
+                <li class="discovery-vehicles-tab-item" data-category="hatchback">
+                    <h2 class="car-model">Hatchback</h2>
+                </li>
+                <li class="discovery-vehicles-tab-item" data-category="suv">
+                    <h2 class="car-model">SUV</h2>
+                </li>
+                <li class="discovery-vehicles-tab-item" data-category="mpv">
+                    <h2 class="car-model">MPV</h2>
+                </li>
+            </ul>
+        </div>
+    
+        <div class="discovery-vehicles-box-slider">
+            <!-- Sedan -->
+            <div class="car sedan">
+                <img src="Sedan/Hyndai Grand i10 Sedan.png" alt="Hyundai Grand i10 Sedan">
+                <h3>Hyundai Grand i10 Sedan</h3>
+                <div class="item_infor">
+                    <div class="price"><i class="fa-solid fa-dollar-sign"></i> Từ 425 triệu</div>
+                    <button class="sum_price">Phí lăn bánh</button>
+                </div>
+            </div>
+            <div class="car sedan">
+                <img src="Sedan/Hyundai Elantra.png" alt="Hyundai Elantra">
+                <h3>Hyundai Elantra</h3>
+                <div class="item_infor">
+                    <div class="price"><i class="fa-solid fa-dollar-sign"></i> Từ 599 triệu</div>
+                    <button class="sum_price">Phí lăn bánh</button>
+                </div>
+            </div>
+            <div class="car sedan">
+                <img src="Sedan/Hyundai Accent.png" alt="Hyundai Accent">
+                <h3>Hyundai Accent</h3>
+                <div class="item_infor">
+                    <div class="price"><i class="fa-solid fa-dollar-sign"></i> Từ 439 triệu</div>
+                    <button class="sum_price">Phí lăn bánh</button>
+                </div>
+            </div>
+    
+            <!-- Hatchback -->
+            <div class="car hatchback">
+                <img src="Hatchback/Hyundai Grand i10 Hatchback.png" alt="Hyundai Grand i10 Hatchback">
+                <h3>Hyundai Grand i10 Hatchback</h3>
+                <div class="item_infor">
+                    <div class="price"><i class="fa-solid fa-dollar-sign"></i> Từ 360 triệu</div>
+                    <button class="sum_price">Phí lăn bánh</button>
+                </div>
+            </div>
+    
+            <!-- SUV -->
+            <div class="car suv">
+                <img src="SUV/Hyundai Santa Fe.png" alt="Hyundai Santa Fe">
+                <h3>Hyundai Santa Fe</h3>
+                <div class="item_infor">
+                    <div class="price"><i class="fa-solid fa-dollar-sign"></i> Từ 1069 triệu</div>
+                    <button class="sum_price">Phí lăn bánh</button>
+                </div>
+            </div>
+            <div class="car suv">
+                <img src="SUV/Hyundai Tucson.png" alt="Hyundai Tucson">
+                <h3>Hyundai Tucson</h3>
+                <div class="item_infor">
+                    <div class="price"><i class="fa-solid fa-dollar-sign"></i> Từ 769 triệu</div>
+                    <button class="sum_price">Phí lăn bánh</button>
+                </div>
+            </div>
+            <div class="car suv">
+                <img src="SUV/Hyundai Venue.png" alt="Hyundai Venue">
+                <h3>Hyundai Venue</h3>
+                <div class="item_infor">
+                    <div class="price"><i class="fa-solid fa-dollar-sign"></i> Từ 499 triệu</div>
+                    <button class="sum_price">Phí lăn bánh</button>
+                </div>
+            </div>
+            <div class="car suv">
+                <img src="SUV/Huyndai Creta.png" alt="Hyundai Creta">
+                <h3>Hyundai Creta</h3>
+                <div class="item_infor">
+                    <div class="price"><i class="fa-solid fa-dollar-sign"></i> Từ 599 triệu</div>
+                    <button class="sum_price">Phí lăn bánh</button>
+                </div>
+            </div>
+            <div class="car suv">
+                <img src="SUV/Hyundai Palisade.png" alt="Hyundai Palisade">
+                <h3>Hyundai Palisade</h3>
+                <div class="item_infor">
+                    <div class="price"><i class="fa-solid fa-dollar-sign"></i> Từ 1469 triệu</div>
+                    <button class="sum_price">Phí lăn bánh</button>
+                </div>
+            </div>
+    
+            <!-- MPV -->
+            <div class="car mpv">
+                <img src="MPV/Hyundai Stargazer X.png" alt="Hyundai Stargazer X">
+                <h3>Hyundai Stargazer X</h3>
+                <div class="item_infor">
+                    <div class="price"><i class="fa-solid fa-dollar-sign"></i> Từ 489 triệu</div>
+                    <button class="sum_price">Phí lăn bánh</button>
+                </div>
+            </div>
+            <div class="car mpv">
+                <img src="MPV/Hyundai Custin.png" alt="Hyundai Custin">
+                <h3>Hyundai Custin</h3>
+                <div class="item_infor">
+                    <div class="price"><i class="fa-solid fa-dollar-sign"></i> Từ 820 triệu</div>
+                    <button class="sum_price">Phí lăn bánh</button>
+                </div>
+            </div>
+        </div> 
+    </div>
+    
+
+    <div class="technology-news">
+        <h2 class="technology-news-title">Công nghệ</h2>
+        <div class="technology-news-post">
+            <div class="post_video1">
+                <iframe width="300" height="200" src="https://www.youtube.com/embed/4dmmto-eFv8?si=gkSEr8jY2r-0GiXw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <div class="post_video1">
+                <img src="Techlonogy/led tren man hinh.png" alt="Công nghệ hiển thị màn hình trên kính" class="technology-img">
+                <img src="Techlonogy/cua bo.png" alt="Công nghệ &quot;cua bò ngang&quot; " class="technology-img">
+            </div>
+            <div class="post_video1">
+                <iframe width="300" height="200" src="https://www.youtube.com/embed/a2Ebzomtqy0?si=3VLZTqv2fc_l29cb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <div class="post_video1">
+                <iframe width="300" height="200" src="https://www.youtube.com/embed/wb5xgH0tQa4?si=cb_WFUqqhg4KTl7e" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+
+    <div class="section-news-promote">
+        <h2 class="section-news-promote-title">TIN TỨC MỚI</h2>
+        <div class="news-promote-post">
+            <div class="news-promote-post-large">
+                <div class="news-item">
+                    <img src="Nen/santafe.jpg" alt="Hyundai Santa Fe">
+                    <h3>Hệ thống an toàn chủ động trên xe Hyundai SantaFe</h3>
+                    <p>23 Tháng sáu, 2020</p>
+                    <p>HYUNDAI SANTA FE 2019, MẪU XE AN TOÀN BẬC NHẤT TRONG PHÂN KHÚC...</p>
+                </div>
+            </div>
+            <div class="news-promote-post-small">
+                <div class="post-small-top">
+                    <div class="news-item">
+                        <img src="SUV/Hyundai Palisade.png" alt="Hyundai Palisade">
+                        <h3>Hyundai Palisade Đối Thủ Của Ford Explorer</h3>
+                        <p>1 Tháng mười hai, 2019</p>
+                        <p>Với sự xuất hiện của Hyundai Palisade, thương hiệu Hàn Quốc đã chính thức...</p>
+                    </div>
+                </div>
+                <div class="post-small-under">
+                    <div class="news-item">
+                        <img src="SUV/Hyundai Santa Fe.png" alt="Hyundai Santa Fe thế hệ mới">
+                        <h3>Hyundai Santa Fe thế hệ mới giá từ 25.500 USD tại Mỹ</h3>
+                        <p>13 Tháng bảy, 2018</p>
+                        <p>Sau khi giới thiệu tại New York Auto Show 2019 hồi tháng 3, ngày 27/6...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="section-intro-contact">
+        <div class="section-intro-contact-space"></div>
+        <section class="section-intro-contact-title">
+            <h2>Hỗ trợ mua xe Hyundai trả góp</h2>
+            <h3>Lãi suất thấp-Thủ tục nhanh chóng</h3>
+            <div class="phone-number">
+                <a href="tel:0931898119">0931 898 119</a>
+            </div>
+        </section>
+        <div class="section-intro-contact-reasion">
+            <h2>Tại sao bạn nên chọn chúng tôi?</h2>
+        </div> 
+        <div class="section-intro-contact-advertisement">
+            <div class="advertisement-item">
+                <i class="fa-duotone fa-solid fa-car"></i>
+                <p>Giao xe nhanh nhất</p>
+            </div>
+            <div class="advertisement-item">
+                <i class="fa-duotone fa-solid fa-dollar-sign"></i>
+                <p>Đại lý khuyến mãi nhiều nhất</p>
+            </div>
+            <div class="advertisement-item">
+                <i class="fa-duotone fa-solid fa-handshake"></i>
+                <p>Chăm sóc khách hàng nhiệt tình nhất</p>
+            </div>
+        </div> 
+    </div>
+
+    <div class="section-form-contact">
+        <p class="form-contact-title">
+            <h2>Trao đổi với chúng tôi</h2>
+        </p>
+        <form>
+            <div class="form-section">
+                <label for="customer-info">Thông tin quý khách cần biết</label>
+                <select id="customer-info">
+                    <option value="option1">Xe</option>
+                    <option value="option2">Phụ kiện - Phụ tùng</option>
+                    <option value="option3">Khuyến mãi</option>
+                    </select>
+            </div>
+    
+            <div class="form-section">
+                <label for="full-name">Họ và tên</label>
+                <input type="text" id="full-name" name="full-name" required>
+            </div>
+    
+            <div class="form-section">
+                <label for="phone">Số điện thoại</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+    
+            <div class="form-section">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+    
+            <div class="form-section">
+                <label for="request">Điền yêu cầu/thắc mắc</label>
+                <textarea id="request" name="request" rows="4"></textarea>
+            </div>
+    
+            <div class="form-section">
+                <input type="checkbox" id="agreement" name="agreement" required>
+                <label for="agreement">Tôi đã đọc và đồng ý với các quy định và chính sách của Hyundai</label>
+            </div>
+    
+            <button type="submit" class="submit">Gửi</button>
+        </form>
+    </div>
+    
+    <footer>
+        <div class="footer-menu" style="background-color: #22292F;">
+            <div class="footer-menu-inforcompany">
+                <h2>Thông tin showroom tại Hưng Yên</h2>
+                <p>Địa chỉ: Số 317 Nguyễn Văn Linh, Phường An Tảo, Hưng Yên</p>
+            </div>
+            <div class="footer-menu-hotline">
+                <h2>Thông tin liên hệ</h2>
+                <div class="contact-info">
+                    <div>Hotline: 1900561212</div>
+                    <div>Email: minhnlq.hyundai.@gmail.com</div>
+                </div>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/profile.php?id=100072681441547" target="_blank">
+                        
+                        <i class="fa-brands fa-facebook"></i>
+                        
+                    </a>
+                    <a href="https://www.youtube.com/your_youtube_channel" target="_blank">
+                        
+                        <i class="fa-brands fa-youtube"></i>
+                        
+                    </a>
+                </div>
+            </div>
+            <div class="footer-menu-signupemail">
+                <h2>Bạn muốn nhận khuyến mãi?</h2>
+                <p>Điền email của bạn vào đâu nếu không muốn</p>
+                <p>bỏ lỡ khuyến mãi nào nhé!</p>
+                <input>
+            </div>
+        </div>
+    </footer>
+    
+    
+    <div class="position-fixed">
+        <a href="http://zalo.me/0343330924 "></a>
+        <h3>0912345678</h3>
+        <img src="iconzalo.jpg" alt="">
+    </div>
+</body>
+</html>

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Tổng Quan</title>
+    <link rel="stylesheet" href="admin.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="admin-top">
+        <div class="header">
+            <div class="logo">
+                <img src="Anh/logo.png" alt="Hyundai Logo" />
+                <h2 style="color: rgb(12, 69, 126); " >HYUNDAI</h2>
+            </div>
+            <div class="brand-name">
+                <h2>TC MOTOR</h2>
+            </div>
+
+            <div class="search-bar">
+                
+                <input type="text" id="global-search-input" placeholder="Search here...">
+                <button id="global-search-button"><i class="fas fa-search"></i></button>
+            </div>
+            <div class="right-icons">
+                <img src="Anh/cờ việt.jpg" alt="Flag" class="flag-icon">
+                <i class="fas fa-bell" style="margin-bottom: -10px;"></i>
+                <img src="Anh/avt.jpg" alt="Avatar" class="avatar-icon">
+            </div>
+        </div>
+    </div>
+    <div class="employee-management_topin-main">
+        <div class="admin-main_left">
+            <div class="left-home">
+                <a href="home.html" class="load-content" data-target="home" data-page-name="Trang chủ">
+                    <ion-icon name="home-outline" class="icon"></ion-icon>
+                    <span class="nav-text" style="color:rgb(86, 244, 176)">Home</span>
+                </a>
+            </div>
+            <div class="left-home">
+                <a href="qlxe.html" class="load-content" data-target="qlxe" data-page-name="Quản lý xe">
+                    <ion-icon name="car-outline" class="icon"></ion-icon>
+                    <span class="nav-text">Quản lý xe</span>
+                </a>
+            </div>
+            <div class="left-home">
+                <a href="qlnhanvien.html" class="load-content" data-target="qlnhanvien" data-page-name="Quản lý nhân viên">
+                    <ion-icon name="person-circle-outline" class="icon"></ion-icon>
+                    <span class="nav-text">Quản lý nhân viên</span>
+                </a>
+            </div>
+            <div class="left-home">
+                <a href="qlkhachhang.html" class="load-content" data-target="qlkhachhang" data-page-name="Quản lý khách hàng">
+                    <ion-icon name="people-outline" class="icon"></ion-icon>
+                    <span class="nav-text">Quản lý khách hàng</span>
+                </a>
+            </div>
+            <div class="left-home">
+                <a href="qlhoadonban.html" class="load-content" data-target="qlhoadonban" data-page-name="Quản lý hóa đơn bán">
+                    <ion-icon name="receipt-outline" class="icon"></ion-icon>
+                    <span class="nav-text">Quản lý hóa đơn bán</span>
+                </a>
+            </div>
+            <div class="left-home">
+                <a href="qlhoadonnhap.html" class="load-content" data-target="qlhoadonban" data-page-name="Quản lý hóa đơn nhập">
+                    <ion-icon name="receipt-outline" class="icon"></ion-icon>
+                    <span class="nav-text">Quản lý hóa đơn nhập</span>
+                </a>
+            </div>
+            <div class="left-home">
+                <a href="qltaikhoan.html" class="load-content" data-target="qltaikhoan" data-page-name="Quản lý tài khoản">
+                    <i class="fa-solid fa-user"></i>
+                    <span class="nav-text">Quản lý tài khoản</span> </a>
+            </div>
+            <div class="log-out">Log out</div>
+        </div>
+        <div class="admin-main_right" id="right-content-area">
+            <div id="home-content" class="content-item active">
+                <div class="admin-main_right_top" >
+                    <p style="font-weight: bold; font-size: 25px;">Những điều <label style="color: rgba(255, 0, 0, 0.702);">"nhất"</label> của TC Motor</p>
+                    <div class="top-intro">
+                        <div class="intro_1" style="background-color: aquamarine;overflow-y: scroll;">
+                            <i class="fa-regular fa-thumbs-up"></i>
+                            <p>Nhà sản xuất & phân phối xe Hyundai lớn nhất Việt Nam</p>
+                        </div>
+                        <div class="intro_1" style="background-color: rgb(227, 255, 127);">
+                            <i class="fa-solid fa-gauge"></i>
+                            <p>Dẫn đầu thị phần xe du lịch tại Việt Nam</p>
+                        </div>
+                        <div class="intro_1" style="background-color: rgb(255, 159, 127);">
+                            <i class="fa-solid fa-house"></i>
+                            <p>Mạng lưới đại lý lớn nhất</p>
+                        </div>
+                        <div class="intro_1" style="background-color: rgb(127, 204, 255);">
+                            <i class="fa-solid fa-check"></i>
+                            <p>Chế độ bảo hành tốt nhất</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="admin-main_right_bottom">
+                    <div class="chart-container">
+                        <canvas id="lineChart"></canvas>
+                    </div>
+                    <div class="statistics">
+                        <ul>
+                            <li class="turnover" style="background-color: #2ecc71;"><i class="fa-solid fa-money-bill-wave"></i><h3>Doanh thu quý 1:</h3><p>1,000,000 VND</p></li>
+                            <li class="turnover" style="background-color: #3498db;"><i class="fa-solid fa-chart-line"></i><h3>Đơn hàng mới:</h3><p>50</p></li>
+                            <li class="turnover" style="background-color: #e67e22;"><i class="fa-solid fa-users"></i><h3>Khách hàng mới:</h3><p>25</p></li>
+                            <li class="turnover" style="background-color: #9b59b6;"><i class="fa-solid fa-box-open"></i><h3>Sản phẩm mới:</h3><p>10</p></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function createLineChart() {
+            const chartCanvas = document.getElementById('lineChart');
+            if (!chartCanvas) {
+                console.error("Không tìm thấy phần tử canvas có ID 'lineChart'.");
+                return;
+            }
+
+            const chartContext = chartCanvas.getContext('2d');
+            if (!chartContext) {
+                console.error("Không thể lấy được context 2D của canvas.");
+                return;
+            }
+
+            try {
+                const myLineChart = new Chart(chartContext, {
+                    type: 'line',
+                    data: {
+                        labels: ['Qúy 1', 'Qúy 2', 'Qúy 3', 'Qúy 4'],
+                        datasets: [{
+                            label: 'Doanh thu Sedan',
+                            data: [100, 200, 150, 250],
+                            borderColor: 'red',
+                            backgroundColor: 'transparent',
+                            borderWidth: 2
+                        }, {
+                            label: 'Doanh thu Hatchback',
+                            data: [120, 180, 160, 230],
+                            borderColor: 'blue',
+                            backgroundColor: 'transparent',
+                            borderWidth: 2
+                        }, {
+                            label: 'Doanh thu SUV',
+                            data: [110, 170, 130, 240],
+                            borderColor: 'green',
+                            backgroundColor: 'transparent',
+                            borderWidth: 2
+                        }, {
+                            label: 'Doanh thu MPV',
+                            data: [90, 150, 140, 220],
+                            borderColor: 'orange',
+                            backgroundColor: 'transparent',
+                            borderWidth: 2
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        scales: {
+                            x: {
+                                title: {
+                                    display: true,
+                                    text: 'Quý'
+                                }
+                            },
+                            y: {
+                                beginAtZero: true,
+                                title: {
+                                    display: true,
+                                    text: 'Doanh thu (triệu VND)'
+                                }
+                            }
+                        }
+                    }
+                });
+            } catch (error) {
+                console.error("Lỗi khi tạo biểu đồ:", error);
+            }
+        }
+
+        // Call createLineChart when the page loads
+        window.onload = function() {
+            createLineChart();
+        };
+    </script>
+    <script src="admin.js">
+    </script>
+</body>
+</html>

@@ -1,0 +1,890 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+            <img src="logo.png" alt="Hyundai Logo" />
+            <h2 style="color: rgb(12, 69, 126);">HYUNDAI</h2>
+        </div>
+        <div class="brand-name">
+            <h2>TC MOTOR</h2>
+        </div>
+    </div>
+    <nav>
+        <button class="menu-btn">MENU</button>
+        <ul class="navigation-bar">
+            <li><a href="TrangChu.html">Trang Chủ</a></li>
+            <li><a href="GioiThieu.html">Giới Thiệu</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropbtn">Mua xe <i class="fa fa-chevron-down"></i>
+                </a>
+                <div class="dropdown-content">
+                    <a href="TraGop.html">Trả góp</a>
+                    <a href="DuToanChiPhi.html">Dự toán chi phí</a>
+                </div>
+            </li>
+            <li class="dropdown" style="background-color:rgb(232,78,4);">
+                <a href="DichVu.html" class="dropbtn">Dịch Vụ <i class="fa fa-chevron-down"></i>
+                </a>
+                <div class="dropdown-content">
+                    <a href="BaoHanh.html">Bảo Hành</a>
+                    <a href="PhuTung&PhuKien.html">Phụ Tùng Và Phụ Kiện</a>
+                </div>
+            </li>
+            <li><a href="DangKyLaiThu.html">Đăng ký lái thử</a></li>
+            <li><a href="KhuyenMai.html">Khuyến mãi</a></li>
+            <li><a href="TinTuc.html">Tin Tức</a></li>
+            <li><a href="LienHe.html">Liên Hệ</a></li>
+            <li class="tim-kiem">
+                <a href="#" class="search-icon"><i class="fa fa-search"></i></a>
+                <div class="search">
+                    <div class="form-search">
+                        <div class="form-search_exit">
+                            <button class="close-search">X</button>
+                        </div>
+                        <div class="form-search_item">
+                            <input type="text" placeholder="Type then hit enter to search...">
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <div class="overlay"></div>
+        </ul>
+    </nav>
+
+
+    <div class="service-title-button">
+        <h3>Phụ Tùng Và Phụ Kiện</h3>
+        <div><i class="fa-solid fa-house"></i> > <button class="dvBtn">Dịch Vụ</button></div>
+    </div>
+    <div class="service-select-button">
+        <button class="dvBtn">Chương trình dịch vụ</button>
+        <button class="baohanhBtn">Bảo hành</button>
+        <button>Phụ tùng và phụ kiện</button>
+    </div>
+
+    <div class="accessory-head-title">
+        <h1>Phụ kiện chính hãng của Hyundai<hr></h1>
+    </div>
+
+    <div class="accessory-container">
+        <div class="accessory-select">
+            <button class="accessory-title active" data-content="accessory-phukientonghop">Phụ Kiện Tổng Hợp</button>
+            <button class="accessory-title" data-content="accessory-grand110">Grand i10</button>
+            <button class="accessory-title" data-content="accessory-elantra">Elantra</button>
+            <button class="accessory-title" data-content="accessory-accent">Accent</button>
+            <button class="accessory-title" data-content="accessory-santafe">Santa Fe</button>
+            <button class="accessory-title" data-content="accessory-tucson">Tucson</button>
+            <button class="accessory-title" data-content="accessory-starex">Starex</button>
+        </div>
+        <div class="accessory-content">
+            <div id="accessory-phukientonghop" class="content active">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>STT</th>
+                            <th>TÊN HÀNG</th>
+                            <th>ĐVT</th>
+                            <th>SL</th>
+                            <th>TÍNH NĂNG</th>
+                            <th>Giá Bán</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Áo trùm xe 4 chỗ</td>
+                            <td>Cái</td>
+                            <td>1</td>
+                            <td>Che mưa, nắng, bụi</td>
+                            <td>550,000</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Áo trùm xe 7 chỗ</td>
+                            <td>Bộ</td>
+                            <td>1</td>
+                            <td>Che mưa, nắng, bụi</td>
+                            <td>630,000</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Áo trùm xe 7 chỗ Starex</td>
+                            <td>Bộ</td>
+                            <td>1</td>
+                            <td>Che mưa, nắng, bụi</td>
+                            <td>715,000</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Thảm lót chân carbon</td>
+                            <td>Bộ</td>
+                            <td>1</td>
+                            <td>Lót chân, nỉ</td>
+                            <td>1,375,000</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>Tappi sàn 5D cao cấp theo xe</td>
+                            <td>Bộ</td>
+                            <td>1</td>
+                            <td>Lót chân, nhựa bọc simili cao cấp</td>
+                            <td>3,520,000</td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>Bình chữa cháy</td>
+                            <td>Chai</td>
+                            <td>1</td>
+                            <td>An toàn, bảo vệ</td>
+                            <td>308,000</td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>Bình chữa cháy hàng ý</td>
+                            <td>Chai</td>
+                            <td>1</td>
+                            <td>An toàn, bảo vệ</td>
+                            <td>385,000</td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td>Bao tay lái</td>
+                            <td>Cái</td>
+                            <td>1</td>
+                            <td>Thời trang</td>
+                            <td>418,000</td>
+                        </tr>
+                        <tr>
+                            <td>9</td>
+                            <td>Bao tay lái cao cấp</td>
+                            <td>Cái</td>
+                            <td>1</td>
+                            <td>Thời trang</td>
+                            <td>1,237,500</td>
+                        </tr>
+                        <tr>
+                            <td>10</td>
+                            <td>Nước hoa các cao cấp</td>
+                            <td>Hộp</td>
+                            <td>1</td>
+                            <td>Thơm tự nhiên, không chất độc hại</td>
+                            <td>572,000</td>
+                        </tr>
+                        <tr>
+                            <td>11</td>
+                            <td>Nâng cấp dây led đèn pha</td>
+                            <td>Bộ</td>
+                            <td>1</td>
+                            <td>Chiếu sáng, làm đẹp</td>
+                            <td>8,107,000</td>
+                        </tr>
+                        <tr>
+                            <td>12</td>
+                            <td>Vòng tròn led đèn pha</td>
+                            <td>Bộ</td>
+                            <td>1</td>
+                            <td>Chiếu sáng, làm đẹp</td>
+                            <td>4,598,000</td>
+                        </tr>
+                        <tr>
+                            <td>13</td>
+                            <td>Lock cửa tự động, có remote</td>
+                            <td>Bộ</td>
+                            <td>1</td>
+                            <td>Kính tự động lên khi khóa clock cửa</td>
+                            <td>4,950,000</td>
+                        </tr>
+                        <tr>
+                            <td>14</td>
+                            <td>Hiển thị tốc độ trên kính lái</td>
+                            <td>Bộ</td>
+                            <td>1</td>
+                            <td>Hiển thị tốc độ, giúp lái xe an toàn</td>
+                            <td>4,950,000</td>
+                        </tr>
+                        <tr>
+                            <td>15</td>
+                            <td>Lock cửa tự động, có remote</td>
+                            <td>Bộ</td>
+                            <td>1</td>
+                            <td>Hiển thị tốc độ, giúp lái xe an toàn</td>
+                            <td>5,280,000</td>
+                        </tr>
+                        <tr>
+                            <td>16</td>
+                            <td>Kèn sò Bosch</td>
+                            <td>Bộ</td>
+                            <td>1</td>
+                            <td>Tăng âm lượng</td>
+                            <td>935,000</td>
+                        </tr>
+                        <tr>
+                            <td>17</td>
+                            <td>Kính chiếu hậu gập điện</td>
+                            <td>Bộ</td>
+                            <td>1</td>
+                            <td>Bảo vệ, làm đẹp</td>
+                            <td>4,180,000</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="accessory-grand110" class="content">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>STT</th>
+                            <th>TÊN HÀNG</th>
+                            <th>ĐVT</th>
+                            <th>SL</th>
+                            <th>TÍNH NĂNG</th>
+                            <th>Giá Bán</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Dán phim cách nhiệt cao cấp đặc biệt</td>
+                            <td>Xe</td>
+                            <td>1</td>
+                            <td>Chống tia UV 100%, cách nhiệt, bảo vệ da</td>
+                            <td>8,800,000</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Dán phim cách nhiệt theo tiêu chuẩn</td>
+                            <td>Xe</td>
+                            <td>1</td>
+                            <td>Chống tia UV, cách nhiệt, bảo vệ da</td>
+                            <td>6,600,000</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Cách âm chống ồn </td>
+                            <td>Xe</td>
+                            <td>1</td>
+                            <td>Cách nhiệt, cách âm, chống ồn </td>
+                            <td>5,390,000</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Cách âm chống ồn cao cấp 3M</td>
+                            <td>Xe</td>
+                            <td>1</td>
+                            <td>Cách nhiệt, cách âm, chống ồn </td>
+                            <td>5,390,000</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>Phủ nano sơn</td>
+                            <td>Xe</td>
+                            <td>1</td>
+                            <td>Chống trầy, bảo vệ sơn</td>
+                            <td>7,700,000</td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>Phủ nano kính </td>
+                            <td>Xe</td>
+                            <td>1</td>
+                            <td>Chống nước mưa, giảm chói, rõ tầm nhìn, chống ố, trầy xước, bóng kính, dễ vệ sinh</td>
+                            <td>2,800,000</td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>Phủ gầm</td>
+                            <td>Xe</td>
+                            <td>1</td>
+                            <td>Chống ồn, chống mọt, gỉ sét, ăn mòn, trầy xước</td>
+                            <td>5,940,000</td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td>Áo da trùm ghế</td>
+                            <td>Bộ</td>
+                            <td>1</td>
+                            <td>Làm đẹp, dễ bảo dưỡng ghế</td>
+                            <td>5,280,000</td>
+                        </tr>
+                        <tr>
+                            <td>9</td>
+                            <td>Nệm da cao cấp</td>
+                            <td>Bộ</td>
+                            <td>1</td>
+                            <td>Làm đẹp, dễ bảo dưỡng ghế</td>
+                            <td>9,350,000</td>
+                        </tr>
+                        <tr>
+                            <td>10</td>
+                            <td>Nệm da cao cấp theo tiêu chuẩn SX</td>
+                            <td>Bộ</td>
+                            <td>1</td>
+                            <td>Làm đẹp, dễ bảo dưỡng ghế</td>
+                            <td>13,750,000</td>
+                        </tr>
+                        <tr>
+                            <td>11</td>
+                            <td>Nệm da cao cấp đặc biệt </td>
+                            <td>Bộ</td>
+                            <td>1</td>
+                            <td>Làm đẹp, dễ bảo dưỡng ghế</td>
+                            <td>17,600,000</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="accessory-elantra" class="content">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>STT</th>
+                            <th>TÊN HÀNG</th>
+                            <th>ĐVT</th>
+                            <th>SL</th>
+                            <th>TÍNH NĂNG</th>
+                            <th>Giá Bán</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Dán phim cách nhiệt cao cấp đặc biệt</td>
+                            <td>Xe</td>
+                            <td>1</td>
+                            <td>Chống tia UV 100%, cách nhiệt, bảo vệ da</td>
+                            <td>8,800,000</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Dán phim cách nhiệt theo tiêu chuẩn</td>
+                            <td>Xe</td>
+                            <td>1</td>
+                            <td>Chống tia UV, cách nhiệt, bảo vệ da</td>
+                            <td>7,150,000</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Cách âm chống ồn </td>
+                            <td>Xe</td>
+                            <td>1</td>
+                            <td>Cách nhiệt, cách âm, chống ồn </td>
+                            <td>5,390,000</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Cách âm chống ồn cao cấp 3M</td>
+                            <td>Xe</td>
+                            <td>1</td>
+                            <td>Cách nhiệt, cách âm, chống ồn </td>
+                            <td>7,700,000</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>Phủ nano sơn</td>
+                            <td>Xe</td>
+                            <td>1</td>
+                            <td>Chống trầy, bảo vệ sơn</td>
+                            <td>6,270,000</td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>Phủ nano kính </td>
+                            <td>Xe</td>
+                            <td>1</td>
+                            <td>Chống nước mưa, giảm chói, rõ tầm nhìn, chống ố, trầy xước, bóng kính, dễ vệ sinh</td>
+                            <td>2,800,000</td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>Phủ gầm</td>
+                            <td>Xe</td>
+                            <td>1</td>
+                            <td>Chống ồn, chống mọt, gỉ sét, ăn mòn, trầy xước</td>
+                            <td>6,270,000</td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td>Áo da trùm ghế</td>
+                            <td>Bộ</td>
+                            <td>1</td>
+                            <td>Làm đẹp, dễ bảo dưỡng ghế</td>
+                            <td>5,280,000</td>
+                        </tr>
+                        <tr>
+                            <td>9</td>
+                            <td>Nệm da cao cấp</td>
+                            <td>Bộ</td>
+                            <td>1</td>
+                            <td>Làm đẹp, dễ bảo dưỡng ghế</td>
+                            <td>9,350,000</td>
+                        </tr>
+                        <tr>
+                            <td>10</td>
+                            <td>Nệm da cao cấp theo tiêu chuẩn SX</td>
+                            <td>Bộ</td>
+                            <td>1</td>
+                            <td>Làm đẹp, dễ bảo dưỡng ghế</td>
+                            <td>13,750,000</td>
+                        </tr>
+                        <tr>
+                            <td>11</td>
+                            <td>Nệm da cao cấp đặc biệt </td>
+                            <td>Bộ</td>
+                            <td>1</td>
+                            <td>Làm đẹp, dễ bảo dưỡng ghế</td>
+                            <td>17,600,000</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="accessory-accent" class="content">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>STT</th>
+                            <th>TÊN HÀNG</th>
+                            <th>ĐVT</th>
+                            <th>SL</th>
+                            <th>TÍNH NĂNG</th>
+                            <th>Giá Bán</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Dán phim cách nhiệt cao cấp đặc biệt</td>
+                            <td>Xe</td>
+                            <td>1</td>
+                            <td>Chống tia UV 100%, cách nhiệt, bảo vệ da</td>
+                            <td>8,800,000</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Dán phim cách nhiệt theo tiêu chuẩn</td>
+                            <td>Xe</td>
+                            <td>1</td>
+                            <td>Chống tia UV, cách nhiệt, bảo vệ da</td>
+                            <td>7,150,000</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Cách âm chống ồn </td>
+                            <td>Xe</td>
+                            <td>1</td>
+                            <td>Cách nhiệt, cách âm, chống ồn </td>
+                            <td>5,390,000</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Cách âm chống ồn cao cấp 3M</td>
+                            <td>Xe</td>
+                            <td>1</td>
+                            <td>Cách nhiệt, cách âm, chống ồn </td>
+                            <td>7,700,000</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>Phủ nano sơn</td>
+                            <td>Xe</td>
+                            <td>1</td>
+                            <td>Chống trầy, bảo vệ sơn</td>
+                            <td>6,270,000</td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>Phủ nano kính </td>
+                            <td>Xe</td>
+                            <td>1</td>
+                            <td>Chống nước mưa, giảm chói, rõ tầm nhìn, chống ố, trầy xước, bóng kính, dễ vệ sinh</td>
+                            <td>2,800,000</td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>Phủ gầm</td>
+                            <td>Xe</td>
+                            <td>1</td>
+                            <td>Chống ồn, chống mọt, gỉ sét, ăn mòn, trầy xước</td>
+                            <td>6,270,000</td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td>Áo da trùm ghế</td>
+                            <td>Bộ</td>
+                            <td>1</td>
+                            <td>Làm đẹp, dễ bảo dưỡng ghế</td>
+                            <td>5,280,000</td>
+                        </tr>
+                        <tr>
+                            <td>9</td>
+                            <td>Nệm da cao cấp</td>
+                            <td>Bộ</td>
+                            <td>1</td>
+                            <td>Làm đẹp, dễ bảo dưỡng ghế</td>
+                            <td>9,350,000</td>
+                        </tr>
+                        <tr>
+                            <td>10</td>
+                            <td>Nệm da cao cấp theo tiêu chuẩn SX</td>
+                            <td>Bộ</td>
+                            <td>1</td>
+                            <td>Làm đẹp, dễ bảo dưỡng ghế</td>
+                            <td>13,750,000</td>
+                        </tr>
+                        <tr>
+                            <td>11</td>
+                            <td>Nệm da cao cấp đặc biệt </td>
+                            <td>Bộ</td>
+                            <td>1</td>
+                            <td>Làm đẹp, dễ bảo dưỡng ghế</td>
+                            <td>17,600,000</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="accessory-santafe" class="content">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>STT</th>
+                            <th>TÊN HÀNG</th>
+                            <th>ĐVT</th>
+                            <th>SL</th>
+                            <th>TÍNH NĂNG</th>
+                            <th>Giá Bán</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Dán phim cách nhiệt cao cấp đặc biệt</td>
+                            <td>Xe</td>
+                            <td>1</td>
+                            <td>Chống tia UV 100%, cách nhiệt, bảo vệ da</td>
+                            <td>10,500,000</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Dán phim cách nhiệt theo tiêu chuẩn</td>
+                            <td>Xe</td>
+                            <td>1</td>
+                            <td>Chống tia UV, cách nhiệt, bảo vệ da</td>
+                            <td>8,250,000</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Cách âm chống ồn </td>
+                            <td>Xe</td>
+                            <td>1</td>
+                            <td>Cách nhiệt, cách âm, chống ồn </td>
+                            <td>6,270,000</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Cách âm chống ồn cao cấp 3M</td>
+                            <td>Xe</td>
+                            <td>1</td>
+                            <td>Cách nhiệt, cách âm, chống ồn </td>
+                            <td>9,500,000</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>Phủ nano sơn</td>
+                            <td>Xe</td>
+                            <td>1</td>
+                            <td>Chống trầy, bảo vệ sơn</td>
+                            <td>6,820,000</td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>Phủ nano kính </td>
+                            <td>Xe</td>
+                            <td>1</td>
+                            <td>Chống nước mưa, giảm chói, rõ tầm nhìn, chống ố, trầy xước, bóng kính, dễ vệ sinh</td>
+                            <td>3,300,000</td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>Phủ gầm</td>
+                            <td>Xe</td>
+                            <td>1</td>
+                            <td>Chống ồn, chống mọt, gỉ sét, ăn mòn, trầy xước</td>
+                            <td>6,820,000</td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td>Áo da trùm ghế</td>
+                            <td>Bộ</td>
+                            <td>1</td>
+                            <td>Làm đẹp, dễ bảo dưỡng ghế</td>
+                            <td>5,720,000</td>
+                        </tr>
+                        <tr>
+                            <td>9</td>
+                            <td>Nệm da cao cấp</td>
+                            <td>Bộ</td>
+                            <td>1</td>
+                            <td>Làm đẹp, dễ bảo dưỡng ghế</td>
+                            <td>12,089,000</td>
+                        </tr>
+                        <tr>
+                            <td>10</td>
+                            <td>Nệm da cao cấp theo tiêu chuẩn SX</td>
+                            <td>Bộ</td>
+                            <td>1</td>
+                            <td>Làm đẹp, dễ bảo dưỡng ghế</td>
+                            <td>15,400,000</td>
+                        </tr>
+                        <tr>
+                            <td>11</td>
+                            <td>Nệm da cao cấp đặc biệt </td>
+                            <td>Bộ</td>
+                            <td>1</td>
+                            <td>Làm đẹp, dễ bảo dưỡng ghế</td>
+                            <td>18,700,000</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="accessory-tucson" class="content">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>STT</th>
+                            <th>TÊN HÀNG</th>
+                            <th>ĐVT</th>
+                            <th>SL</th>
+                            <th>TÍNH NĂNG</th>
+                            <th>Giá Bán</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Dán phim cách nhiệt cao cấp đặc biệt</td>
+                            <td>Xe</td>
+                            <td>1</td>
+                            <td>Chống tia UV 100%, cách nhiệt, bảo vệ da</td>
+                            <td>10,500,000</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Dán phim cách nhiệt theo tiêu chuẩn</td>
+                            <td>Xe</td>
+                            <td>1</td>
+                            <td>Chống tia UV, cách nhiệt, bảo vệ da</td>
+                            <td>8,250,000</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Cách âm chống ồn </td>
+                            <td>Xe</td>
+                            <td>1</td>
+                            <td>Cách nhiệt, cách âm, chống ồn </td>
+                            <td>6,270,000</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Cách âm chống ồn cao cấp 3M</td>
+                            <td>Xe</td>
+                            <td>1</td>
+                            <td>Cách nhiệt, cách âm, chống ồn </td>
+                            <td>9,500,000</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>Phủ nano sơn</td>
+                            <td>Xe</td>
+                            <td>1</td>
+                            <td>Chống trầy, bảo vệ sơn</td>
+                            <td>6,820,000</td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>Phủ nano kính </td>
+                            <td>Xe</td>
+                            <td>1</td>
+                            <td>Chống nước mưa, giảm chói, rõ tầm nhìn, chống ố, trầy xước, bóng kính, dễ vệ sinh</td>
+                            <td>3,300,000</td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>Phủ gầm</td>
+                            <td>Xe</td>
+                            <td>1</td>
+                            <td>Chống ồn, chống mọt, gỉ sét, ăn mòn, trầy xước</td>
+                            <td>6,820,000</td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td>Áo da trùm ghế</td>
+                            <td>Bộ</td>
+                            <td>1</td>
+                            <td>Làm đẹp, dễ bảo dưỡng ghế</td>
+                            <td>5,720,000</td>
+                        </tr>
+                        <tr>
+                            <td>9</td>
+                            <td>Nệm da cao cấp</td>
+                            <td>Bộ</td>
+                            <td>1</td>
+                            <td>Làm đẹp, dễ bảo dưỡng ghế</td>
+                            <td>12,089,000</td>
+                        </tr>
+                        <tr>
+                            <td>10</td>
+                            <td>Nệm da cao cấp theo tiêu chuẩn SX</td>
+                            <td>Bộ</td>
+                            <td>1</td>
+                            <td>Làm đẹp, dễ bảo dưỡng ghế</td>
+                            <td>15,400,000</td>
+                        </tr>
+                        <tr>
+                            <td>11</td>
+                            <td>Nệm da cao cấp đặc biệt </td>
+                            <td>Bộ</td>
+                            <td>1</td>
+                            <td>Làm đẹp, dễ bảo dưỡng ghế</td>
+                            <td>18,700,000</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="accessory-starex" class="content">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>STT</th>
+                            <th>TÊN HÀNG</th>
+                            <th>ĐVT</th>
+                            <th>SL</th>
+                            <th>TÍNH NĂNG</th>
+                            <th>Giá Bán</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Dán phim cách nhiệt cao cấp đặc biệt (6 chỗ)</td>
+                            <td>Xe</td>
+                            <td>1</td>
+                            <td>Chống tia UV 100%, cách nhiệt, bảo vệ da</td>
+                            <td>10,500,000</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Dán phim cách nhiệt theo tiêu chuẩn (6 chỗ)</td>
+                            <td>Xe</td>
+                            <td>1</td>
+                            <td>Chống tia UV, cách nhiệt, bảo vệ da</td>
+                            <td>8,250,000</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="accessory-note">
+            *Ghi chú:
+            <p>- Đơn giá bao gồm 10% VAT và đã bao gồm công lắp đặt</p>
+            <p>- Thanh toán một lần bằng tiền mặt hoặc chuyển khoản trước khi nhận xe</p>
+            <p>- Bảng giá áp dụng từ ngày 04/04/2018 cho đến khi có thông báo mới</p>
+        </div>
+
+        <h1 style="color: rgb(95, 95, 97);">Phụ tùng chính hãng<hr style="width: 800px;margin-top: -18px;margin-right: 130px;"></h1>
+        <div class="widget-container">
+            <div class="widge-title">
+                <h3>Khi đặt mua phụ tùng, Quý khách hãy luôn chọn phụ tùng chính hiệu Hyundai Mobis bởi vì:</h3>
+                <p>- Chất lượng đáng tin cậy về mặt kỹ thuật, an toàn cũng như hiệu quả kinh tế.</p>
+                <p>- Phụ tùng chính hiệu luôn luôn tương thích với xe của Quý khách, kể cả những chi tiết nhỏ nhất.</p>
+                <p>- Phụ tùng chính hiệu đã được kiểm tra về mặt chất lượng</p>
+                <p>- Phụ tùng chính hiệu Hyundai – Mobis chỉ được cung cấp thông qua mạng lưới đại lý ủy quyền dịch vụ.</p>
+            </div>
+            <div class="widge-title">
+                <h3>Làm thế nào để biết phụ tùng chính hiệu</h3>
+                <p>- Bao bì đóng gói cho phụ tùng chính hiệu Hyundai - Mobis không chỉ bảo đảm an toàn trong quá trình vận chuyển mà còn là cơ sở cho việc chống lại hàng giả mạo. Bao bì ấy được phân biệt thông qua thiết kế đặc biệt và nhãn phụ tùng thống nhất. </p>
+                <p>- Khi phụ tùng còn nguyên vẹn chưa mở ra sử dụng, một tem chống hàng giả vẫn còn niêm phong trên bao bì của phụ tùng đó. Một số phụ tùng phải có tính an toàn cao như lọc nhớt, bố thắng, hay là lọc gió và nó phải được thay thế đúng theo định kỳ quy định. </p>
+                <p>- Một khi bao bì đóng gói cho phụ tùng đã được mở ra thì tem chống hàng giả cũng sẽ bị rách và không thể sử dụng lại được. Vì vậy khi Quý khách mua phụ tùng chính hiệu thì điểm đặc trưng luôn luôn có đó là tem chống hàng giả phải còn nguyên vẹn</p>
+            </div>
+            <div class="widge-title">
+                <h3>Phụ tùng chính hiệu - Phụ tùng giả mạo</h3>
+                <p>- Phụ tùng giả mạo có thể mua được </p>
+                <p>- Những người làm hàng giả mạo không chỉ dừng lại ở những phụ tùng thay thế: Hàng giả mạo chính hiệu Hyundai - Mobis có thể tiêu thụ (mua) trên thị trường.</p>
+            </div>
+            <div class="widge-title">
+                <h3>Phụ tùng chính hiệu - Những thắc mắc</h3>
+                <p>Để cung cấp đến quý khách các thông tin phụ tùng chính hiệu một cách chính xác, quý khách vui lòng điền đầy đủ thông tin trong mẫu yêu cầu báo giá và gửi cho chúng tôi. Ngay khi nhận được các yêu cầu của Quý Khách chúng tôi giải quyết và sẽ liên lạc lại nhằm thỏa mãn các yêu cầu của quý khách một cách hoàn hảo.</p>
+            </div>
+        </div>
+
+    </div>
+    <footer>
+        <div class="footer-menu" style="background-color: #22292F;">
+            <div class="footer-menu-inforcompany">
+                <h2>Thông tin showroom tại Hưng Yên</h2>
+                <p>Địa chỉ: Số 317 Nguyễn Văn Linh, Phường An Tảo, Hưng Yên</p>
+            </div>
+            <div class="footer-menu-hotline">
+                <h2>Thông tin liên hệ</h2>
+                <div class="contact-info">
+                    <div>Hotline: 1900561212</div>
+                    <div>Email: minhnlq.hyundai.@gmail.com</div>
+                </div>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/profile.php?id=100072681441547" target="_blank">
+                        
+                        <i class="fa-brands fa-facebook"></i>
+                        
+                    </a>
+                    <a href="https://www.youtube.com/your_youtube_channel" target="_blank">
+                        
+                        <i class="fa-brands fa-youtube"></i>
+                        
+                    </a>
+                </div>
+            </div>
+            <div class="footer-menu-signupemail">
+                <h2>Bạn muốn nhận khuyến mãi?</h2>
+                <p>Điền email của bạn vào đâu nếu không muốn</p>
+                <p>bỏ lỡ khuyến mãi nào nhé!</p>
+                <input>
+            </div>
+        </div>
+    </footer>
+    <script>
+        document.querySelectorAll('.accessory-title').forEach(button => {
+            button.addEventListener('click', function() {
+                // Xóa class active khỏi tất cả các nút và nội dung
+                document.querySelectorAll('.accessory-title').forEach(btn => btn.classList.remove('active'));
+                document.querySelectorAll('.content').forEach(content => content.classList.remove('active'));
+
+                // Thêm class active vào nút được nhấn và hiển thị nội dung tương ứng
+                this.classList.add('active');
+                document.getElementById(this.getAttribute('data-content')).classList.add('active');
+            });
+        });
+    </script>
+
+
+    <div class="position-fixed">
+        <a href="http://zalo.me/0343330924 "></a>
+        <h3>0912345678</h3>
+        <img src="iconzalo.jpg" alt="">
+    </div>
+    <script src="main.js"></script>
+    <script>
+        document.querySelector('.baohanhBtn').addEventListener('click', function(){
+            window.location.href = 'BaoHanh.html'
+        })
+        document.querySelector('.dvBtn').addEventListener('click', function(){
+            window.location.href = 'DichVu.html'
+        })
+    </script>
+</body>
+</html>
