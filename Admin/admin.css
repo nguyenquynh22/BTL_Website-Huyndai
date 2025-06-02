@@ -206,15 +206,14 @@ canvas {
 }
 
 .chart-container {
-    flex: 2; /* Biểu đồ chiếm 2 phần */
+    flex: 2; 
     margin-right: 20px; 
 }
 
 .statistics {
-    flex: 1; /* Thống kê chiếm 1 phần */
+    flex: 1; 
     padding: 13px;
     height: 200px;
-
 }
 
 .statistics>h3 {
@@ -453,8 +452,8 @@ table{
 
 .total-container {
     display: flex;
-    justify-content: flex-end; /* Căn chỉnh sang phải */
-    margin-top: 10px; /* Thêm khoảng cách với bảng */
+    justify-content: flex-end; 
+    margin-top: 10px; 
 }
 
 .total-label {
@@ -626,90 +625,21 @@ table{
 .form-right button:hover{
     box-shadow:0 0 15px rgb(102, 102, 214);
 }
-/* .form-right input{
-    border-radius: 5px;
-    margin: 10px;
-    padding: 7px 10px;
-} */
-#register{
-    display: flex;
-    justify-content: center;
-    box-sizing: border-box;
-}
-#registerBtn:hover{
-    cursor: pointer;
-    color: rgb(84, 84, 235);
-    box-shadow: 0px 1px rgb(84, 84, 235);
-}
-/* Add this to your admin.css */
 
-/* Add this to your admin.css */
-
-/* General styling for inputs for better appearance */
 .form-right input {
-    border: 1px solid #ccc; /* Initial subtle border */
+    border: 1px solid #ccc; 
     border-radius: 5px;
     margin: 10px;
     padding: 7px 10px;
     width: 80%;
-    outline: none; /* Remove default browser outline */
-    transition: box-shadow 0.4s ease-in-out, border-color 0.4s ease-in-out; /* Smooth transition for the shadow and border color */
+    outline: none; 
+    transition: box-shadow 0.4s ease-in-out, border-color 0.4s ease-in-out; 
     position: relative;
 }
 
-/* Effect when input is focused */
 .form-right input:focus {
-    border-color: transparent; /* Make the actual border transparent as we're using shadow initially */
-    animation: border-focus-clockwise 0.8s forwards; /* Apply the new clockwise animation */
-}
-
-/* Keyframes for the clockwise border animation */
-@keyframes border-focus-clockwise {
-    0% {
-        /* Start with the shadow only on the top-left corner */
-        box-shadow:
-            inset 1px 1px 0 0 rgb(48, 145, 231), /* Top-left corner */
-            inset -1px -1px 0 0 transparent, /* Bottom-right */
-            inset 1px -1px 0 0 transparent, /* Bottom-left */
-            inset -1px 1px 0 0 transparent; /* Top-right */
-        border-color: transparent;
-    }
-    25% {
-        /* Top border appears (from left to right) */
-        box-shadow:
-            inset 0 1px 0 0 rgb(48, 145, 231), /* Top border */
-            inset 0 0 0 0 transparent,
-            inset 0 0 0 0 transparent,
-            inset 0 0 0 0 transparent;
-        border-color: transparent;
-    }
-    50% {
-        /* Top and right borders appear */
-        box-shadow:
-            inset 0 1px 0 0 rgb(48, 145, 231), /* Top border */
-            inset -1px 0 0 0 rgb(48, 145, 231), /* Right border */
-            inset 0 0 0 0 transparent,
-            inset 0 0 0 0 transparent;
-        border-color: transparent;
-    }
-    75% {
-        /* Top, right, and bottom borders appear */
-        box-shadow:
-            inset 0 1px 0 0 rgb(48, 145, 231), /* Top border */
-            inset -1px 0 0 0 rgb(48, 145, 231), /* Right border */
-            inset 0 -1px 0 rgb(48, 145, 231), /* Bottom border */
-            inset 0 0 0 0 transparent;
-        border-color: transparent;
-    }
-    100% {
-        /* All four borders appear, completing the clockwise path */
-        box-shadow:
-            inset 0 1px 0 0 rgb(48, 145, 231), /* Top border */
-            inset -1px 0 0 0 rgb(48, 145, 231), /* Right border */
-            inset 0 -1px 0 0rgb(48, 145, 231), /* Bottom border */
-            inset 1px 0 0 0 rgb(48, 145, 231); /* Left border */
-        border: 1px solid rgb(48, 145, 231); /* Final solid red border */
-    }
+    border-color: rgb(48, 145, 231); 
+    box-shadow: 0 0 5px rgba(48, 145, 231, 0.5);
 }
 .log-out{
     position: absolute;
