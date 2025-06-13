@@ -19,7 +19,7 @@
     </div>
     <nav>
         <button class="menu-btn">MENU</button>
-        <ul class="navigation-bar">
+        <ul class="navigation-bar show">
             <li><a href="TrangChu.html">Trang Chủ</a></li>
             <li style="background-color:rgb(232,78,4);"><a href="GioiThieu.html">Giới Thiệu</a></li>
             <li class="dropdown">
@@ -39,7 +39,6 @@
                 </div>
             </li>
             <li><a href="DangKyLaiThu.html">Đăng ký lái thử</a></li>
-            <li><a href="KhuyenMai.html">Khuyến mãi</a></li>
             <li><a href="TinTuc.html">Tin Tức</a></li>
             <li><a href="LienHe.html">Liên Hệ</a></li>
             <li class="tim-kiem">
@@ -70,7 +69,7 @@
                 <img src="GIOITHIEU/khai truong.png" alt="Hình ảnh khai trương đại lý" class="introduce-right_img">
             </div>
         </div>
-        <div class="introduce">
+        <div class="introduce introduce2">
             <div class="introduce-right">
                 <img src="GIOITHIEU/khaitruong.png" alt="Hình ảnh đại lý" class="introduce-right_img">
             </div>
@@ -223,121 +222,6 @@
             </div>
         </div>
     </footer>
-    <script>
-        // ================== Xử lý Slider Cơ Sở Hạ Tầng ==================
-        const slider = document.querySelector('.slider');
-        const prevSliderBtn = document.querySelector('.slider-btn.prev');
-        const nextSliderBtn = document.querySelector('.slider-btn.next');
-        const dots = document.querySelectorAll('.slider-dots .dot');
-
-        // Sửa các selector cho phần phóng to (gallery)
-        const galleryContainer = document.querySelector('.zoom');
-        const galleryCloseBtn = document.querySelector('.zoom .close'); 
-        const galleryImage = document.querySelector('.gallery_inner img');
-        const galleryPrevBtn = document.querySelector('.zoom .control.prev'); 
-        const galleryNextBtn = document.querySelector('.zoom .control.next'); 
-
-        const imgs = document.querySelectorAll('.slider_1 img'); // Tất cả các ảnh trong slider nhỏ
-        let slideWidth = 0;
-        if (document.querySelector('.slider_1')) {
-            slideWidth = document.querySelector('.slider_1').offsetWidth;
-        }
-
-
-        let sliderIndex = 0;
-
-        function updateSlider() {
-            if (slider) {
-                slider.style.transform = `translateX(-${sliderIndex * slideWidth}px)`;
-            }
-            dots.forEach((dot, index) => {
-                dot.classList.toggle('active', index === sliderIndex);
-            });
-        }
-
-        if (prevSliderBtn) {
-            prevSliderBtn.addEventListener('click', () => {
-                sliderIndex = (sliderIndex - 1 + dots.length) % dots.length;
-                updateSlider();
-            });
-        }
-
-        if (nextSliderBtn) {
-            nextSliderBtn.addEventListener('click', () => {
-                sliderIndex = (sliderIndex + 1) % dots.length;
-                updateSlider();
-            });
-        }
-
-        dots.forEach((dot, index) => {
-            dot.addEventListener('click', () => {
-                sliderIndex = index;
-                updateSlider();
-            });
-        });
-
-        // Gọi updateSlider() ban đầu để thiết lập vị trí slider và dot
-        updateSlider();
-
-        function galleryShow(){
-            // Kiểm tra sự tồn tại của các phần tử trước khi thao tác
-            if (galleryPrevBtn && galleryNextBtn && galleryContainer && galleryImage && imgs.length > 0) {
-                if(sliderIndex === 0){
-                    galleryPrevBtn.classList.add('hide');
-                }else{
-                    galleryPrevBtn.classList.remove('hide');
-                }
-                if(sliderIndex === imgs.length - 1){
-                    galleryNextBtn.classList.add('hide');
-                }else{
-                    galleryNextBtn.classList.remove('hide');
-                }
-                galleryImage.src = imgs[sliderIndex].src; 
-                galleryContainer.classList.add('show');
-            }
-        }
-
-        imgs.forEach((item, index)=>{
-            item.addEventListener('click', function(){
-                sliderIndex = index;
-                galleryShow();
-            });
-        });
-
-        if (galleryCloseBtn) {
-            galleryCloseBtn.addEventListener('click', function(){
-                if (galleryContainer) {
-                    galleryContainer.classList.remove('show');
-                }
-            });
-        }
-
-        document.addEventListener('keydown', function(e){ 
-            if(e.key === 'Escape'){ 
-                if (galleryContainer) {
-                    galleryContainer.classList.remove('show');
-                }
-            }
-        });
-
-        if (galleryPrevBtn) {
-            galleryPrevBtn.addEventListener('click', function(){
-                if(sliderIndex > 0){
-                    sliderIndex--;
-                    galleryShow();
-                }
-            });
-        }
-
-        if (galleryNextBtn) {
-            galleryNextBtn.addEventListener('click', function(){
-                if(sliderIndex < imgs.length - 1){
-                    sliderIndex++;
-                    galleryShow();
-                }
-            });
-        }
-    </script>
 
     <div class="position-fixed">
         <a href="http://zalo.me/0343330924 "></a>

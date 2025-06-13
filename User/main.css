@@ -198,7 +198,6 @@ nav {
 body.show-search .search {
     display: block;
 }
-
 body.show-search .overlay {
     display: block;
 }
@@ -511,12 +510,19 @@ advertisement-item p {
     border: 1px solid #ccc; 
     padding: 20px;
     border-radius: 5px;
+    text-align: center;
 }
 .form-contact-title {
     text-align: center;
     margin-bottom: 15px;
 }
-
+.section-form-contact form{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    font-size: 17px;
+}
 /*Footer*/
 .footer-menu{
     justify-content:space-between ;
@@ -734,7 +740,6 @@ advertisement-item p {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-/* Để thay đổi màu sắc cho tiêu đề */
 .introduce-left h3[style="color:rgb(229,78,78);"] {
     color: rgb(229, 78, 78);
 }
@@ -742,12 +747,17 @@ advertisement-item p {
     text-align: center;
 }
 
-/* Để thay đổi màu sắc cho đoạn văn */
 .introduce-left p[style="color:#6F2C9F;"] {
     color: #6F2C9F;
 }
-
-/*slider showroom*/
+@media (max-width: 480px) {
+    .introduce{
+        flex-direction: column;
+    }
+    .introduce2{
+        flex-direction: column-reverse;
+    }
+}
 /* Slider */
 .infor-showroom{
     text-align: center;
@@ -829,10 +839,11 @@ advertisement-item p {
     background: rgba(0,0,0,0.6);
     z-index: 1000;
     color:white;
-    opacity: 0;
-    pointer-events: none;
-    transform: scale(0.8);
-    transition: 0.5s;
+    opacity: 0; 
+    visibility: hidden; 
+    pointer-events: none; /* Không cho phép tương tác khi ẩn */
+    transform: scale(0.8); 
+    transition: opacity 0.5s ease, visibility 0.5s ease, transform 0.5s ease;
 }
 .close{
     position:fixed ;
@@ -859,15 +870,18 @@ advertisement-item p {
     object-fit: cover;
     margin-top: 80px;
 }
-.show{
-    opacity: 1;
-    pointer-events: auto;
-    transform: scale(1);
+.gallery_inner{
+    user-select: none;
 }
 .hide{
     display: none;
 }
-
+.zoom.show {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto; 
+    transform: scale(1);
+}
 /* Overlay */
 .overlay {
     display: none;
@@ -1201,13 +1215,21 @@ advertisement-item p {
 }
 
 .content {
-    position: relative; /* Cần thiết để z-index hoạt động */
+    position: relative;
     z-index: 1; 
 }
 .content > h1 {
     color: white;
     padding-top: 50px;
     padding-left: 50px; 
+}
+.more-advice > .counsel-left{
+    width:500px; 
+    margin-left: 200px
+}
+.more-advice >.counsel-left > .form-container{
+    margin-left:-100px;
+    margin-right: 100px;
 }
 @media (max-width: 768px) {
     .fixed-background{
@@ -1219,7 +1241,7 @@ advertisement-item p {
         min-height: 300px;
     }
     .main-container {
-        margin: 0 20px; /* Reduce margin for better fit on small screens */
+        margin: 0 20px; 
     }
 
     .more-advice {
@@ -1237,16 +1259,64 @@ advertisement-item p {
     .counsel-right{
         margin-left:95px;
     }
+    .more-advice>.counsel-right{
+        margin-left: 290px;
+        margin-bottom: 80px;
+    }
     
 }
 
+@media (max-width: 480px) {
+    .main-container{
+        margin: unset;
+        padding: unset;
+    }
+    .more-advice{
+        width: 100vw;
+        margin-left: -200px;
+    }
+    .more-advice.counsel-right{
+        margin:unset;
+    }
+    .more-advice.counsel-left{
+        margin:unset;
+    }
+    .manage-infor{
+        flex-direction: column;
+        margin-left: -10px;
+    }
+    .image-container img, .manage-name{
+        margin-left: -10px;
+    }
+    .more-advice >.counsel-left > .form-container{
+        width: 250px;
+        margin-left: -110px;
+        margin-top: 20px;
+    }
+    .footer-menu{
+        flex-direction: column-reverse;
+    }
+    .benefits-right{
+        margin-left: 20px;
+        margin-bottom: 20px;
+    }
+    .contact-box_right >.counsel-left >.form-container{
+        margin-left: 8px;
+    }
+    .service-wrapper{
+        flex-direction: column;
+    }
+    .service-title.active{
+        border: 1px solid rgba(128, 128, 128, 0.526);
+    }
+}
 .cost-estimate-form {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: flex-start;
     max-width: 700px;
-    margin: 20px 0; /* Loại bỏ margin auto và chỉ giữ margin top/bottom */
+    margin: 20px 0;
     padding: 20px;
     margin-left:80px;
 }
@@ -1254,7 +1324,7 @@ advertisement-item p {
 
 .car-series, .location {
     width: 48%;
-    margin-bottom: 15px; /* Thêm khoảng cách giữa các nhóm */
+    margin-bottom: 15px;
 }
 
 .car-series p, .location p {
@@ -1281,7 +1351,7 @@ advertisement-item p {
     border-radius: 4px;
     cursor: pointer;
     font-weight: bold;
-    margin-top: 20px; /* Thêm khoảng cách phía trên nút */
+    margin-top: 20px; 
 }
 
 .cost-estimate-form button:hover {
@@ -1323,12 +1393,12 @@ advertisement-item p {
 /* ...........TRANG DỊCH VỤ...............*/
 .service-container {
     display: flex;
-    justify-content: center; /* Căn giữa theo chiều ngang */
+    justify-content: center; 
     margin-bottom: 50px;
 }
 .service-title-button {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Chia thành 3 cột bằng nhau */
+    grid-template-columns: repeat(3, 1fr); 
     align-items: center;
     padding-left:100px;
     padding-right:100px;
@@ -1371,12 +1441,12 @@ advertisement-item p {
 .service-wrapper {
     display: flex;
     border: 1px solid #ccc;
-    width: 80%; /* Điều chỉnh chiều rộng theo nhu cầu */
+    width: 80%; 
 }
 
 .service-select {
     display: flex;
-    flex-direction: column; /* Xếp các button theo chiều dọc */
+    flex-direction: column; 
     width: 300px;
     position: relative;
 }
@@ -1389,8 +1459,8 @@ advertisement-item p {
     padding: 10px;
     border: none;
     cursor: pointer;
-    text-align: left; /* Căn trái nội dung button */
-    position: relative; /* Thêm position relative cho service-title */
+    text-align: left; 
+    position: relative;
     z-index: 1;
 }
 
@@ -1400,7 +1470,7 @@ advertisement-item p {
     width: 300px;
     border: 1px solid rgba(128, 128, 128, 0.526);
     border-right: none;
-    position: relative; /* Thêm position relative cho service-title.active */
+    position: relative;
     z-index: 2;
     box-sizing: border-box;
 }
@@ -1419,7 +1489,7 @@ advertisement-item p {
 }
 .content, .content.active{
     border: 1px solid rgba(128, 128, 128, 0.526);
-    position: relative; /* Thêm position relative cho content */
+    position: relative;
     z-index: 0;
 }
 .content p, .content.active p{
@@ -1466,13 +1536,11 @@ advertisement-item p {
     border-radius: 5px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.261);
 }
-/* Thêm CSS cho hiệu ứng che border */
 .service-title.active {
     left: 1px;
     position: relative;
     z-index: 2;
     margin-left: -1px;
-    /* Thêm transform: translateZ(0) để tạo ngữ cảnh xếp chồng mới */
     transform: translateZ(0);
 }
 /* ...........TRANG BẢO HÀNH...............*/
@@ -1483,8 +1551,8 @@ advertisement-item p {
 }
 .accessory-content{
     margin-bottom:20px;
-    position: relative; /* Thêm position: relative cho container của bảng */
-    z-index: 1; /* Đặt z-index cho bảng */
+    position: relative;
+    z-index: 1; 
 }
 .accessory-head-title h1{
     margin-left:130px;
@@ -1503,7 +1571,7 @@ advertisement-item p {
     margin-left:1px;
     position: relative;
     display: flex;
-    z-index: 2; /* Đặt z-index cao hơn cho các nút */
+    z-index: 2;
 }
 .accessory-select button.active{
     color:purple;
@@ -1528,7 +1596,6 @@ th, td {
     border-bottom: none; 
     color: purple; 
 }
-/* Đặt màu chữ là purple cho các nút */
 .accessory-title {
     color: rgb(116,116,118);
     background-color: white;
@@ -1540,14 +1607,12 @@ th, td {
     transition: top 0.2s ease; 
 }
 
-/* Thay đổi màu khi nút được active */
 .accessory-title.active {
     color: purple;
     top:1px;
     border-bottom: 1px solid white;
 }
 
-/* Ẩn các nội dung không active */
 .content {
     display: none;
 }
@@ -1568,11 +1633,11 @@ table tr:first-child td {
 }
 
 @media screen and (max-width: 768px){
-    .accessory-head-title hr{
+    .accessory-head-title h1 hr, .hr hr
+    {
         display: none;
     }
 }
-
 
 
 /* ...........TRANG ĐĂNG KÝ LÁI THỬ...............*/
@@ -1712,8 +1777,6 @@ table tr:first-child td {
 }
 
 
-
-
 /* ...........TRANG TIN TỨC...............*/
 .news-box_infor{
     display: flex;
@@ -1749,6 +1812,12 @@ table tr:first-child td {
     text-align: left;
     border-radius: 5px;
 }
+.register-test_drive-left{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-right:80px;
+}
 @media (max-width: 768px) {
     .register-test_drive {
         flex-direction: column; 
@@ -1767,6 +1836,7 @@ table tr:first-child td {
     }
     .news-box{
         width: 300px;
+        margin-left: 40px;
     }
     .news-box_img img{
         width: 100%;
@@ -1775,7 +1845,11 @@ table tr:first-child td {
         width: 100%; 
     }
 }
-
+@media (max-width: 480px) {
+    .register-test_drive-left{
+        flex-direction: column;
+    }
+}
 /* ...........TRANG LIÊN HỆ...............*/
 .contact-box {
     display: flex;
@@ -1860,10 +1934,6 @@ table tr:first-child td {
      }   
     
 }
-
-
-
-
 
 
 

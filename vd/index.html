@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard TC Motor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo">
+                <img src="hyundai_logo.png" alt="Hyundai Logo">
+                <span>TC MOTOR</span>
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Search here...">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+            <div class="user-info">
+                <img src="vietnam_flag.png" alt="Vietnam Flag" class="flag">
+                <i class="fas fa-bell"></i>
+                <img src="user_avatar.png" alt="User Avatar" class="avatar">
+            </div>
+        </div>
+    </header>
+
+    <div class="main-container">
+        <nav class="sidebar">
+            <ul>
+                <li><a href="dashboard.html" target="contentFrame"><i class="fas fa-home"></i> Trang chủ</a></li>
+                <li><a href="quanlyxe.html" target="contentFrame"><i class="fas fa-car"></i> Quản lý xe</a></li>
+                <li><a href="quanlynhanvien.html" target="contentFrame"><i class="fas fa-users"></i> Quản lý nhân viên</a></li>
+                <li><a href="quanlykhachhang.html" target="contentFrame"><i class="fas fa-user-tie"></i> Quản lý khách hàng</a></li>
+                <li><a href="quanlyhoadonban.html" target="contentFrame"><i class="fas fa-file-invoice-dollar"></i> Quản lý hóa đơn bán</a></li>
+                <li><a href="quanlyhoadonnhap.html" target="contentFrame"><i class="fas fa-file-invoice"></i> Quản lý hóa đơn nhập</a></li>
+                <li><a href="quanlytaikhoan.html" target="contentFrame"><i class="fas fa-user-circle"></i> Quản lý tài khoản</a></li>
+            </ul>
+            <div class="logout">
+                <a href="#"><i class="fas fa-sign-out-alt"></i> Log out</a>
+            </div>
+        </nav>
+
+        <main class="content">
+            <iframe name="contentFrame" src="dashboard.html" frameborder="0"></iframe>
+        </main>
+    </div>
+
+    <script src="https://kit.fontawesome.com/your-font-awesome-kit.js" crossorigin="anonymous"></script>
+</body>
+</html>

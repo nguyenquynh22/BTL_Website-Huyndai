@@ -72,9 +72,7 @@ body{
     color: white;
     text-decoration: none;
 }
-/* .left-home a:focus, .left-home a:active {
-    color: rgb(236, 86, 78);
-} */
+
 .admin-top{
     background-color: rgba(128 , 128, 128, 0.145);
     width: 100%;
@@ -214,6 +212,7 @@ canvas {
     flex: 1; 
     padding: 13px;
     height: 200px;
+    margin-top: -30px;
 }
 
 .statistics>h3 {
@@ -228,19 +227,20 @@ canvas {
     padding: 0;
 }
 .turnover{
-    line-height: 20px;
+    line-height: 15px;
     color: white;
     border-radius:3px;
-    margin: 2px 0;
-    position: relative;
+    padding: 3px;
+    margin: 2px 0px;
 }
 .turnover i{
-    position: absolute;
-    top: 3px;
-    left:80px;  
+    display: none;
 }
 .turnover h3, .turnover p{
     margin-left:5px;
+}
+.turnover h3{
+    margin-top: 7px;
 }
 
 #lineChart {
@@ -265,7 +265,7 @@ canvas {
 table{
     overflow-y: scroll;
 }
-/* Ẩn chữ khi màn hình nhỏ hơn 768px (ví dụ) */
+
 @media screen and (max-width: 768px) {
     .nav-text {
         display: none; 
@@ -471,8 +471,8 @@ table{
     height: 100vh;
     background-color: rgba(15, 7, 7, 0.5);
     text-align: center;
-    display: none; /* Ẩn overlay mặc định */
-    opacity: 0; /* Đảm bảo trong suốt khi ẩn */
+    display: none; 
+    opacity: 0;
     transition: opacity 0.3s ease;
     overflow: hidden;
 }
